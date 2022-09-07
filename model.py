@@ -76,9 +76,9 @@ timestamps.append(time.time())  # 5: stop training, end program
 # indicate model end
 print("model ended, time taken: " + str(timestamps[-1] - timestamps[0]) + " seconds")
 
-# send signal to end context_switch_timeline.py and fib.java
+# send signal to end context_switch_trace.py and fib.java
 import os, signal
-names = ["context_switch_timeline.py", "fib"]
+names = ["context_switch_trace.py", "fib"]
 pids = []
 for idx, name in enumerate(names):
     for line in os.popen("ps ax | grep " + name + " | grep -v grep"):

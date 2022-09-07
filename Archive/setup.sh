@@ -1,0 +1,1 @@
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt install bpfcc-tools linux-headers-5.4.0-100-generic pip default-jre default-jdk -y && pip install numpy pandas tensorflow matplotlib psutil && git clone https://github.com/JawandS/TF-Analysis.git

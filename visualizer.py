@@ -4,7 +4,7 @@ def visualize(timeline, cpu_time):
     # note to add to directory
     note = ""
     # directory start index
-    dir_idx = 1
+    dir_idx = 27
 
     # data to plot
     with open("Data/timeline_data.txt", "r") as f:

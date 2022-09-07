@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 def visualize(timeline, cpu_time):
     # note to add to directory
-    note = " - Standard"
+    note = ""
     # directory start index
     dir_idx = 1
 

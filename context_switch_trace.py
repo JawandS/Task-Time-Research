@@ -54,7 +54,7 @@ while True:
             for counter in range(len(timeline)):
                 fl.write(str(timeline[counter]) + "\n")
         # process the data
-        from Archive.data_process import tracing_data_process
+        from data_process import tracing_data_process
         tracing_data_process(timeline)
         # finished tracing, give feedback to the user
         print("Finished processing timeline, total run: " + str(round(time.time() - start_time, 3)) + " seconds")

@@ -73,10 +73,11 @@ def tracing_data_process(timeline):
             # check if the timestamp is the same as the previous one
             if index > 0:
                 prev_timestamp, prev_task_name, prev_pid, prev_real_time = cpu_timeline[index - 1]
-                if timestamp - prev_timestamp > 1:
+                if timestamp - prev_timestamp > 5:
                     if cpu_num not in time_jumps:
                         time_jumps[cpu_num] = []
                     time_jumps[cpu_num].append([prev_timestamp, prev_task_name, prev_pid, prev_real_time])
+                    time_jumps[cpu_num].append("-->")
                     time_jumps[cpu_num].append([timestamp, task_name, pid, real_time])
     # get the total time spent on each cpu
     cpu_time_spent = {}
@@ -202,7 +203,7 @@ def tracing_data_process(timeline):
     # write the time jumps to a file
     with open("Data/time_jumps.txt", "w") as f:
         for cpu_num in time_jumps:
-            f.write(str(time_jumps[cpu_num]) + "\n")
+            f.write(str(cpu_num) + ": " + str(time_jumps[cpu_num]) + "\n")
 
     # feedback to user
     print("finished processing timeline data")

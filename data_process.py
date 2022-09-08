@@ -49,11 +49,12 @@ def tracing_data_process(timeline):
     cpu_usage = {}
     python_start_stop = {}
     all_start_stop = {}
+    time_jumps = {} # capture if the timestamp jumps in value
 
     # name of python process
     PYTHON = "python3"
 
-    # preprocess the timeline to find total time for each task
+    # preprocess the timeline to split into a timeline for each CPU
     for index, data in enumerate(timeline):
         # get data from the primary timeline
         task_name, pid, cpu_num, flags, timestamp, msg, real_time, time_diff = data
@@ -64,6 +65,19 @@ def tracing_data_process(timeline):
             cpu_timelines[cpu_num] = []
         # add relevant data and real time to cpu_timeline
         cpu_timelines[cpu_num].append([timestamp, task_name, pid, real_time])
+    # capture any time jumps that occur in the timeline
+    for cpu_num, cpu_timeline in cpu_timelines.items():
+        for index, data in enumerate(cpu_timeline):
+            # get data from the cpu_timeline
+            timestamp, task_name, pid, real_time = data
+            # check if the timestamp is the same as the previous one
+            if index > 0:
+                prev_timestamp, prev_task_name, prev_pid, prev_real_time = cpu_timeline[index - 1]
+                if timestamp - prev_timestamp > 1:
+                    if cpu_num not in time_jumps:
+                        time_jumps[cpu_num] = []
+                    time_jumps[cpu_num].append([prev_timestamp, prev_task_name, prev_pid, prev_real_time])
+                    time_jumps[cpu_num].append([timestamp, task_name, pid, real_time])
     # get the total time spent on each cpu
     cpu_time_spent = {}
     for cpu_num in range(len(cpu_timelines)):
@@ -184,6 +198,11 @@ def tracing_data_process(timeline):
     with open("Data/time_diffs.txt", "w") as f:
         for process in task_times:
             f.write(str(process) + ": " + str(task_times[process] - real_task_times[process]) + "\n")
+
+    # write the time jumps to a file
+    with open("Data/time_jumps.txt", "w") as f:
+        for jump in time_jumps:
+            f.write(str(jump) + "\n")
 
     # feedback to user
     print("finished processing timeline data")

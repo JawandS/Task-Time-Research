@@ -103,13 +103,17 @@ def visualize(timeline, cpu_time):
     # copy data files to the appropriate directory
     import shutil
     os.mkdir(dir_name + "/Raw")
-    shutil.move("Data/model_run_data.txt", dir_name + "/Raw/model_run_data.txt")
-    shutil.move("Data/timeline_data.txt", dir_name + "/Raw/timeline_data.txt")
-    shutil.move("Data/start_stop_data.txt", dir_name + "/Raw/start_stop_data.txt")
-    shutil.move("Data/model.h5", dir_name + "/Raw/model.h5")
-    shutil.move("Data/time_diffs.txt", dir_name + "/Raw/time_diffs.txt")
-    shutil.move("Data/pids.txt", dir_name + "/Raw/pids.txt")
-    shutil.move("Data/timeline.txt", dir_name + "/Raw/timeline.txt")
+    try:
+        shutil.move("Data/model_run_data.txt", dir_name + "/Raw/model_run_data.txt")
+        shutil.move("Data/timeline_data.txt", dir_name + "/Raw/timeline_data.txt")
+        shutil.move("Data/start_stop_data.txt", dir_name + "/Raw/start_stop_data.txt")
+        shutil.move("Data/model.h5", dir_name + "/Raw/model.h5")
+        shutil.move("Data/time_diffs.txt", dir_name + "/Raw/time_diffs.txt")
+        shutil.move("Data/pids.txt", dir_name + "/Raw/pids.txt")
+        shutil.move("Data/timeline.txt", dir_name + "/Raw/timeline.txt")
+        shutil.move("Data/time_jumps.txt", dir_name + "/Raw/time_jumps.txt")
+    except FileNotFoundError:
+        print("Note: some file not found")
     # write the raw timelines into a file
     with open(dir_name + "/Raw/partial_raw_timeline.txt", "w") as fl:
         fl.write(str(timeline[:2000]))

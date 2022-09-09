@@ -26,7 +26,7 @@ counter = 0
 while 1:
     try:
         (task, pid, cpu, flags, ts, msg) = b.trace_fields() # (task, pid, cpu, flags, ts, msg)
-        if counter % 1000 == 0:
+        if counter % 10000 == 0:
             printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
         if prev_data and ts - prev_data[4] > 5:
             # check there's prev data and the time jump is greater than 5

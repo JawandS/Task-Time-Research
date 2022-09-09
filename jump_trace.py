@@ -3,6 +3,9 @@
 # trace context switch
 
 from __future__ import print_function
+
+import time
+
 from bcc import BPF
 from bcc.utils import printb
 
@@ -25,12 +28,17 @@ counter = 0
 # jump value
 JUMP_VAL = 1
 
+# start time
+START_TIME = time.perf_counter()
+
 # format output
 while 1:
     try:
-        (task, pid, cpu, flags, ts, msg) = b.trace_fields() # (task, pid, cpu, flags, ts, msg)
-        # if counter % 10000 == 0:
-        #     printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
+        (task, pid, cpu, flags, ts, msg) = b.trace_fields()  # (task, pid, cpu, flags, ts, msg)
+        if counter % 20000 == 0:
+            # print the time elapsed
+            print("Time elapsed: " + str(time.perf_counter() - START_TIME))
+            # printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
         if prev_data and ts - prev_data[4] > JUMP_VAL:
             # check there's prev data and the time jump is greater than 5
             print("Time jump start\n")

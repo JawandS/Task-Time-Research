@@ -27,8 +27,8 @@ while 1:
         data = b.trace_fields() # (task, pid, cpu, flags, ts, msg)
         if prev_data and data[4] - prev_data[4] > 5:
             # check there's prev data and the time jump is greater than 5
-            printb(b"%-18.9f %-16s %-6d %s" % (prev_data[4], prev_data[0], prev_data[1], prev_data[2]))
-            printb(b"%-18.9f %-16s %-6d %s" % (data[4], data[0], data[1], data[2]))
+            printb(f"%-18.9f %-16s %-6d %s" % (prev_data[4], prev_data[0], prev_data[1], prev_data[2]))
+            printb(f"%-18.9f %-16s %-6d %s" % (data[4], data[0], data[1], data[2]))
             # update the previous data
             prev_data = data
         else:

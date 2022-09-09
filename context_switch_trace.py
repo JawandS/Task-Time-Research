@@ -66,4 +66,4 @@ def main(store_full_log):
             exit()
 
 if __name__ == "__main__":
-    main(store_full_log=True)
+    main(store_full_log=False)

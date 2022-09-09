@@ -202,6 +202,7 @@ def tracing_data_process(timeline):
 
     # write the time jumps to a file
     with open("Data/time_jumps.txt", "w") as f:
+        f.write("CPU num: [system ts, task name, pid, python ts]\n")
         for cpu_num in time_jumps:
             f.write(str(cpu_num) + ": " + str(time_jumps[cpu_num]) + "\n")
 

@@ -1,0 +1,6 @@
+total_job =
+16.57753
+params =
+{'Optimizer': 'SGD', 'Batch Size': 32, 'Layers': 3, 'Multi-Worker': False, 'epochs': 100}
+breakdown =
+{"imports": 1.58604, "read_data": 0.00489, "splitting_data": 0.05146, "compiling_model": 0.02093, "training_model": 14.91422, }

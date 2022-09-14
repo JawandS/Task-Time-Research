@@ -36,11 +36,10 @@ START_TIME = time.perf_counter()
 while 1:
     try:
         (task, pid, cpu, flags, ts, msg) = b.trace_fields()  # (task, pid, cpu, flags, ts, msg)
-        if counter % 20000 == 0:
+        if counter % 100000 == 0:
             # print the time elapsed
-            print("Time elapsed: " + str(time.perf_counter() - START_TIME), end=" ")
+            print(str(round(time.perf_counter() - START_TIME, 3)), end=" ")
             sub_counter += 1
-            # printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
             if sub_counter % 10 == 0:
                 print("\n")
         if prev_data and ts - prev_data[4] > JUMP_VAL:
@@ -53,6 +52,7 @@ while 1:
         else:
             # store the previous data
             prev_data = (task, pid, cpu, flags, ts, msg)
+        # printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
     except ValueError:
         print("ValueError")
         continue

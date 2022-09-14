@@ -41,8 +41,8 @@ while 1:
             print("Time elapsed: " + str(time.perf_counter() - START_TIME), end=" ")
             sub_counter += 1
             # printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
-        if sub_counter % 10 == 0:
-            print("\n")
+            if sub_counter % 10 == 0:
+                print("\n")
         if prev_data and ts - prev_data[4] > JUMP_VAL:
             # check there's prev data and the time jump is greater than 5
             print("\nTime jump:")

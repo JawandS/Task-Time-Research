@@ -24,6 +24,7 @@ print("%-18s %-16s %-6s %s" % ("TIME(s)", "TASK", "PID", "CPU"))
 # capture previous data
 prev_data = []
 counter = 0
+sub_counter = 0
 
 # jump value
 JUMP_VAL = 1
@@ -37,14 +38,16 @@ while 1:
         (task, pid, cpu, flags, ts, msg) = b.trace_fields()  # (task, pid, cpu, flags, ts, msg)
         if counter % 20000 == 0:
             # print the time elapsed
-            print("Time elapsed: " + str(time.perf_counter() - START_TIME))
+            print("Time elapsed: " + str(time.perf_counter() - START_TIME), end=" ")
+            sub_counter += 1
             # printb(b"%-18.9f %-16s %-6d %s" % (ts, task, pid, msg))
+        if sub_counter % 10 == 0:
+            print("\n")
         if prev_data and ts - prev_data[4] > JUMP_VAL:
             # check there's prev data and the time jump is greater than 5
-            print("Time jump start\n")
+            print("\nTime jump:")
             print((prev_data[4], prev_data[0], prev_data[1], prev_data[2]))
             print((ts, task, pid, cpu))
-            print("\nTime jump end")
             # update the previous data
             prev_data = (task, pid, cpu, flags, ts, msg)
         else:

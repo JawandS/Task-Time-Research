@@ -55,6 +55,8 @@ def tracing_data_process(timeline):
     PYTHON = "python3"
     # increment value of the time jump
     TIME_JUMP_INC = 3
+    # don't add time jump values to calculations
+    IGNORE_TIME_JUMPS = True
 
     # preprocess the timeline to split into a timeline for each CPU
     for index, data in enumerate(timeline):
@@ -106,8 +108,8 @@ def tracing_data_process(timeline):
             prev_ts = cpu_timeline[counter - 1][0]
             task_time_taken = ts - prev_ts
             # don't add if time is greater than 3
-            # if task_time_taken > TIME_JUMP_INC:
-            #     task_time_taken = 0
+            if task_time_taken > TIME_JUMP_INC and IGNORE_TIME_JUMPS:
+                task_time_taken = 0
             task_times[task] += task_time_taken
             # add time to real_task_times
             if task not in real_task_times:

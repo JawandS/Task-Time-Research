@@ -54,7 +54,7 @@ def tracing_data_process(timeline):
     # name of python process
     PYTHON = "python3"
     # increment value of the time jump
-    TIME_JUMP_INC = 3
+    TIME_JUMP_INC = 0.5
     # don't add time jump values to calculations
     IGNORE_TIME_JUMPS = False
 

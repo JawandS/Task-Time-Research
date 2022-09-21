@@ -53,6 +53,8 @@ def tracing_data_process(timeline):
 
     # name of python process
     PYTHON = "python3"
+    # increment value of the time jump
+    TIME_JUMP_INC = 3
 
     # preprocess the timeline to split into a timeline for each CPU
     for index, data in enumerate(timeline):
@@ -73,7 +75,7 @@ def tracing_data_process(timeline):
             # check if the timestamp is the same as the previous one
             if index > 0:
                 prev_timestamp, prev_task_name, prev_pid, prev_real_time = cpu_timeline[index - 1]
-                if timestamp - prev_timestamp > 5:
+                if timestamp - prev_timestamp > TIME_JUMP_INC:
                     if cpu_num not in time_jumps:
                         time_jumps[cpu_num] = []
                     time_jumps[cpu_num].append([prev_timestamp, prev_task_name, prev_pid, prev_real_time])
@@ -104,7 +106,7 @@ def tracing_data_process(timeline):
             prev_ts = cpu_timeline[counter - 1][0]
             task_time_taken = ts - prev_ts
             # don't add if time is greater than 3
-            # if task_time_taken > 3:
+            # if task_time_taken > TIME_JUMP_INC:
             #     task_time_taken = 0
             task_times[task] += task_time_taken
             # add time to real_task_times

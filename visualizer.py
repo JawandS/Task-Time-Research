@@ -110,7 +110,7 @@ def visualize(timeline, cpu_time):
         try:
             shutil.move("Data/" + file_name, dir_name + "/Raw/" + file_name)
         except FileNotFoundError:
-            with open("file_errors.txt", "a") as f:
+            with open(dir_name + "/Raw/file_errors.txt", "a") as f:
                 f.write(file_name)
 
     files = ["model_run_data.txt", "timeline_data.txt", "start_stop_data.txt", "model.h5", "time_diffs.txt", "pids.txt",

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def visualize(timeline, cpu_time):
     # note to add to directory
     note = ""
@@ -22,7 +23,7 @@ def visualize(timeline, cpu_time):
         f.readline()
         total_time = eval(f.readline())
         f.readline()
-        f.readline() # params = eval(f.readline())
+        f.readline()  # params = eval(f.readline())
         f.readline()
         breakdown = eval(f.readline())
 
@@ -69,7 +70,7 @@ def visualize(timeline, cpu_time):
         values = []
         for sorted_label, value in sorted_data:
             percent = value / total
-            if percent > .03 or i == 2: # don't add CPU to other
+            if percent > .03 or i == 2:  # don't add CPU to other
                 labels.append(sorted_label)
                 values.append(percent)
             else:
@@ -103,23 +104,27 @@ def visualize(timeline, cpu_time):
     # copy data files to the appropriate directory
     import shutil
     os.mkdir(dir_name + "/Raw")
-    try:
-        shutil.move("Data/model_run_data.txt", dir_name + "/Raw/model_run_data.txt")
-        shutil.move("Data/timeline_data.txt", dir_name + "/Raw/timeline_data.txt")
-        shutil.move("Data/start_stop_data.txt", dir_name + "/Raw/start_stop_data.txt")
-        shutil.move("Data/model.h5", dir_name + "/Raw/model.h5")
-        shutil.move("Data/time_diffs.txt", dir_name + "/Raw/time_diffs.txt")
-        shutil.move("Data/pids.txt", dir_name + "/Raw/pids.txt")
-        shutil.move("Data/timeline.txt", dir_name + "/Raw/timeline.txt")
-        shutil.move("Data/time_jumps.txt", dir_name + "/Raw/time_jumps.txt")
-    except FileNotFoundError:
-        print("Note: some file not found")
+
+    # try to move each file and if it fails note it
+    def move_file(file_name):
+        try:
+            shutil.move("Data/" + file_name, dir_name + "/Raw/" + file_name)
+        except FileNotFoundError:
+            with open("file_errors.txt", "a") as f:
+                f.write(file_name)
+
+    files = ["model_run_data.txt", "timeline_data.txt", "start_stop_data.txt", "model.h5", "time_diffs.txt", "pids.txt",
+             "timeline.txt", "time_jumps.txt"]
+    for file in files:
+        move_file(file)
+
     # write the raw timelines into a file
     with open(dir_name + "/Raw/partial_raw_timeline.txt", "w") as fl:
         fl.write(str(timeline[:2000]))
     # write the cpu time into a file
     with open(dir_name + "/Raw/cpu_time.txt", "w") as fl:
         fl.write(str(cpu_time))
+
     # update git
     import subprocess
     subprocess.call(["sudo", "git", "add", "."])

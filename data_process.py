@@ -104,8 +104,8 @@ def tracing_data_process(timeline):
             prev_ts = cpu_timeline[counter - 1][0]
             task_time_taken = ts - prev_ts
             # don't add if time is greater than 3
-            if task_time_taken > 3:
-                task_time_taken = 0
+            # if task_time_taken > 3:
+            #     task_time_taken = 0
             task_times[task] += task_time_taken
             # add time to real_task_times
             if task not in real_task_times:

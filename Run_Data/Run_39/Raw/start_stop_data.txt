@@ -1,0 +1,8 @@
+all_average_start_stop =
+4.544435882260599
+all_average_idle =
+3.172470919304836
+python_average_start_stop_length =
+0.07683128547410552
+python_average_idle =
+-0.2912121368526718

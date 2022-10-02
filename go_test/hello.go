@@ -16,21 +16,21 @@ func main() {
 	signal.Notify(sig, os.Interrupt)
 
 	bpfModule, err := bpf.NewModuleFromFile("hello.bpf.o")
-	must(err)
+	checkErr(err)
 	defer bpfModule.Close()
 
 	err = bpfModule.BPFLoadObject()
-	must(err)
+	checkErr(err)
 
 	prog, err := bpfModule.GetProgram("hello")
-	must(err)
+	checkErr(err)
 	_, err = prog.AttachKprobe(sys_execve)
-	must(err)
+	checkErr(err)
 
 	go bpf.TracePrint()
 }
 
-func must(err error) {
+func checkErr(err error) {
 	if err != nil {
 		panic(err)
 	}

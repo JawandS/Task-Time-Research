@@ -31,7 +31,7 @@ func main() {
 
 	prog, err = bpfModule.GetProgram("hello_bpftrace")
 	must(err)
-	_, err = prog.AttachRawTracepoint("sys_enter")
+	_, err = prog.AttachRawTracepoint("sched_switch") // attach to sched_switch tracepoint instead of sys_enter
 	must(err)
 
 	e := make(chan []byte, 300)

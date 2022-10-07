@@ -1,12 +1,42 @@
 # move all the timelines and time_diffs to a new folder
-import os, shutil
-# find all the directories in the current location
-dirs = sorted(name for name in os.listdir(".") if os.path.isdir(os.path.join("", name)))
-# iterate through the files
-for dir_name in dirs:
-    # create a new directory for the data
-    os.mkdir("Jawand_Data_Archive/" + dir_name)
-    if os.path.isfile(dir_name + "/Raw/timeline.txt"):
-        shutil.move(dir_name + "/Raw/timeline.txt", "Jawand_Data_Archive/" + dir_name + "/timeline.txt")
-    if os.path.isfile(dir_name + "/Raw/time_diffs.txt"):
-        shutil.move(dir_name + "/Raw/time_diffs.txt", "Jawand_Data_Archive/" + dir_name + "/time_diffs.txt")
+import os, shutil, math
+
+def iter_dirs():
+    # find all the directories in the current location
+    dirs = sorted(name for name in os.listdir(".") if os.path.isdir(os.path.join("", name)))
+    # iterate through the files
+    for dir_name in dirs:
+        # create a new directory for the data
+        os.mkdir("Jawand_Data_Archive/" + dir_name)
+        if os.path.isfile(dir_name + "/Raw/timeline.txt"):
+            shutil.move(dir_name + "/Raw/timeline.txt", "Jawand_Data_Archive/" + dir_name + "/timeline.txt")
+        if os.path.isfile(dir_name + "/Raw/time_diffs.txt"):
+            shutil.move(dir_name + "/Raw/time_diffs.txt", "Jawand_Data_Archive/" + dir_name + "/time_diffs.txt")
+
+def trace_logs():
+    log = "raw_log_D.txt"
+    total_diff = 0 # total difference between timestamps
+    num_diffs = 0 # number of differences
+    with open(log, "r") as f:
+        prev_ts = 0 # previous timestamp
+        # read through the lines
+        for counter, line in enumerate(f):
+            if counter == 0 or line == "\n":
+                continue # skip the first line or new line
+            data = line.strip().split(" ")
+            ts = int(data[1])
+            if counter == 1: # continue if it's the first timestamp
+                prev_ts = ts
+                continue
+            if (prev_ts > 0 and ts < 0) or (prev_ts < 0 and ts > 0): # if the sign changes ignore it
+                continue
+            # calculate the difference
+            diff = ts - prev_ts
+            # add the absolute value of the difference to the total
+            total_diff += abs(diff)
+            num_diffs += 1
+            prev_ts = ts
+    print("Average difference: ", total_diff / num_diffs)
+
+if __name__ == "__main__":
+    trace_logs()

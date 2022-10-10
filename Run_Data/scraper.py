@@ -13,8 +13,8 @@ def iter_dirs():
         if os.path.isfile(dir_name + "/Raw/time_diffs.txt"):
             shutil.move(dir_name + "/Raw/time_diffs.txt", "Jawand_Data_Archive/" + dir_name + "/time_diffs.txt")
 
-def trace_logs():
-    log = "raw_log_D.txt"
+def trace_logs(log_letter):
+    log = "raw_log_" + log_letter + ".txt"
     total_diff = 0 # total difference between timestamps
     num_diffs = 0 # number of differences
     with open(log, "r") as f:
@@ -24,6 +24,8 @@ def trace_logs():
             if counter == 0 or line == "\n":
                 continue # skip the first line or new line
             data = line.strip().split(" ")
+            if len(data) != 2:
+                continue # skip empty lines or new lines
             ts = int(data[1])
             if counter == 1: # continue if it's the first timestamp
                 prev_ts = ts
@@ -36,7 +38,8 @@ def trace_logs():
             total_diff += abs(diff)
             num_diffs += 1
             prev_ts = ts
-    print("Average difference: ", total_diff / num_diffs)
+    print("Average difference for log", log_letter, (total_diff / num_diffs) / 1e+6) # print average difference in seconds
 
 if __name__ == "__main__":
-    trace_logs()
+    trace_logs(log_letter="C")
+    # B=0.0019169486051582826, C=0.0019187149509847137, D=0.00682865379853148

@@ -76,6 +76,9 @@ timestamps.append(time.time())  # 5: stop training, end program
 # indicate model end
 print("model ended, time taken: " + str(timestamps[-1] - timestamps[0]) + " seconds")
 
+# end the program for now
+exit()
+
 # send signal to end context_switch_trace.py and fib.java
 import os, signal
 names = ["context_switch_trace.py", "fib"]
@@ -99,7 +102,7 @@ for idx, name in enumerate(names):
 from data_process import model_data_process
 model_data_process(timestamps, params, model)
 # write PIDs to a file
-with open("Archive/Data/pids.txt", "w") as f:
+with open("Data/pids.txt", "w") as f:
     for name, pid in pids:
         f.write(name + " " + pid + "\n")
 # print end of job

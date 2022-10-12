@@ -8,7 +8,7 @@ def visualize(timeline, cpu_time):
     dir_idx = 27
 
     # data to plot
-    with open("Data/timeline_data.txt", "r") as f:
+    with open("Archive/Data/timeline_data.txt", "r") as f:
         f.readline()
         task_times = eval(f.readline())
         f.readline()
@@ -19,7 +19,7 @@ def visualize(timeline, cpu_time):
         # python_idle = eval(f.readline())
         # f.readline()
         # python_lifespans = eval(f.readline())
-    with open("Data/model_run_data.txt", "r") as f:
+    with open("Archive/Data/model_run_data.txt", "r") as f:
         f.readline()
         total_time = eval(f.readline())
         f.readline()

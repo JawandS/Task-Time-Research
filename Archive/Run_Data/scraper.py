@@ -3,7 +3,7 @@ import os, shutil, math
 
 def iter_dirs():
     # find all the directories in the current location
-    dirs = sorted(name for name in os.listdir(".") if os.path.isdir(os.path.join("", name)))
+    dirs = sorted(name for name in os.listdir("") if os.path.isdir(os.path.join("", name)))
     # iterate through the files
     for dir_name in dirs:
         # create a new directory for the data

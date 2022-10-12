@@ -14,7 +14,7 @@ import time
 timestamps.append(time.time())  # 1: stop imports, start setup
 
 # load and convert data to np.array
-df = pd.read_csv('Data/data.csv', index_col=0)
+df = pd.read_csv('Archive/Data/data.csv', index_col=0)
 time_index = np.array(df['Date'])
 data = np.array(df['Monthly Mean Total Sunspot Number'])
 
@@ -99,7 +99,7 @@ for idx, name in enumerate(names):
 from data_process import model_data_process
 model_data_process(timestamps, params, model)
 # write PIDs to a file
-with open("Data/pids.txt", "w") as f:
+with open("Archive/Data/pids.txt", "w") as f:
     for name, pid in pids:
         f.write(name + " " + pid + "\n")
 # print end of job

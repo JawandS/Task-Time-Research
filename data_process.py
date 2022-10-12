@@ -11,7 +11,7 @@ def model_data_process(timestamps, params, model):
                               'total_job']
 
     # add timestamps to file
-    with open("Data/model_run_data.txt", "w") as fl:
+    with open("Archive/Data/model_run_data.txt", "w") as fl:
         # total time
         fl.write(str(timestamps_definitions[-1]) + " =\n" + str(round(timestamps[-1] - timestamps[0], 5)) + "\n")
         # parameters used
@@ -150,7 +150,7 @@ def tracing_data_process(timeline):
         python_idle[pid] = total_exist - pid_times[pid]
 
     # write tasks counts and times to file
-    with open("Data/timeline_data.txt", "w") as fl:
+    with open("Archive/Data/timeline_data.txt", "w") as fl:
         # task times
         fl.write("task_times =\n{")
         for task in task_times:
@@ -190,7 +190,7 @@ def tracing_data_process(timeline):
     python_total_idle = 0
     for pid in python_idle:
         python_total_idle += python_idle[pid]
-    with open("Data/start_stop_data.txt", "w") as f:
+    with open("Archive/Data/start_stop_data.txt", "w") as f:
         # total lifespan
         f.write("all_average_start_stop =\n")
         f.write(str(sum_tasks_existence / len(all_start_stop)))
@@ -203,12 +203,12 @@ def tracing_data_process(timeline):
         f.write(str(python_total_idle / len(python_idle)))
 
     # write the difference between CPU ts time and python ts time
-    with open("Data/time_diffs.txt", "w") as f:
+    with open("Archive/Data/time_diffs.txt", "w") as f:
         for process in task_times:
             f.write(str(process) + ": " + str(task_times[process] - real_task_times[process]) + "\n")
 
     # write the time jumps to a file
-    with open("Data/time_jumps.txt", "w") as f:
+    with open("Archive/Data/time_jumps.txt", "w") as f:
         f.write("Start time: " + str(timeline[0][4]) + "\n")
         f.write("CPU num: [system ts, task name, pid, python ts]\n")
         for cpu_num in time_jumps:

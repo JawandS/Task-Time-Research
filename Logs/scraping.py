@@ -47,4 +47,4 @@ def check_diffs(file_name, min_diff):
 
 if __name__ == "__main__":
     # check for difference greater than 0.1
-    check_diffs("log_1.txt", 0.1)
+    check_diffs("log_5.txt", 0.1)

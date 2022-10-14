@@ -28,6 +28,7 @@ def trace_logs(log_num):
         # iterate through the data by cpu
         for cpu_num in data:
             prev_ts = 0  # previous timestamp
+            prev_data = []
             for vals in data[cpu_num]:
                 # get the values
                 pname, pid, ts = vals[0], vals[1], vals[2]
@@ -46,6 +47,8 @@ def trace_logs(log_num):
                 # add the difference to the cpu total
                 cpu_total[cpu_num] += diff
                 cpu_switches[cpu_num] += 1
+                # update the prev timestamp and values
+                prev_ts = ts
 
     # print average length between context switch in seconds for each CPU
     for cpu_num in range(len(data)):
@@ -82,5 +85,5 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         num = sys.argv[1]
     else:
-        num = "3"
+        num = "2"
     trace_logs(log_num=num)

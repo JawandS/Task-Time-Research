@@ -78,5 +78,9 @@ def trace_logs(log_num):
 
 
 if __name__ == "__main__":
-    trace_logs(log_num="1")
-    # B=0.0019169486051582826, C=0.0019187149509847137, D=0.00682865379853148
+    import sys
+    if len(sys.argv) > 1:
+        num = sys.argv[1]
+    else:
+        num = 2
+    trace_logs(log_num="2")

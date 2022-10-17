@@ -19,7 +19,7 @@ def check_diffs(file_name, min_diff):
     data = split_by_CPU(file_name)
     max_difference = 0
     for cpu_num in range(len(data)):
-        print(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) /1e+9}")
+        print(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) / 1e+9}")
         prev_ts = 0
         prev_data = []
         for counter, vals in enumerate(data[cpu_num]):
@@ -36,9 +36,7 @@ def check_diffs(file_name, min_diff):
                 print("Difference greater than 0.1: " + str(diff))
                 print(str(prev_data))
                 print(str(vals))
-                print("\n")
-            # if counter % 10000 == 0:
-            #     print(f"CPU {cpu_num}, lin {counter}: {diff}")
+                print("---")
             # update the max difference
             if diff > max_difference:
                 max_difference = diff

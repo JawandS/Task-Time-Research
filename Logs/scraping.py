@@ -8,6 +8,7 @@ def split_by_CPU(file_name):
             # get the values
             vals = line.split()
             pname, pid, cpu_num, ts = vals[0], vals[1], vals[2], vals[3]
+            pid, cpu_num, ts = int(pid), int(cpu_num), int(ts)
             # add the values to the dictionary
             if cpu_num not in data:
                 data[cpu_num] = []
@@ -18,9 +19,10 @@ def check_diffs(file_name, min_diff):
     data = split_by_CPU(file_name)
     max_difference = 0
     for cpu_num in range(len(data)):
+        print(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) /1e+9}")
         prev_ts = 0
         prev_data = []
-        for counter, vals in enumerate(data[str(cpu_num)]):
+        for counter, vals in enumerate(data[cpu_num]):
             # get the values
             pname, pid, ts = vals[0], vals[1], vals[2]
             if not prev_ts:

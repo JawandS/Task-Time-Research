@@ -85,5 +85,5 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         num = sys.argv[1]
     else:
-        num = "5"
+        num = "6"
     trace_logs(log_num=num)

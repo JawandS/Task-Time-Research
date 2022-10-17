@@ -1,0 +1,122 @@
+C:\Users\jawan\OneDrive\Documents\Files\Task-Time-Research\venv\Scripts\python.exe C:\Users\jawan\OneDrive\Documents\Files\Task-Time-Research\Logs\scraping.py
+CPU 0 total difference: 4.490484807
+Difference greater than 0.1: 0.261277854
+['kworker/0:0', 5, 6481440238327]
+('swapper/0', 0, 6481701516181)
+
+
+Difference greater than 0.1: 0.134008414
+['kworker/0:0', 5, 6482920126178]
+('swapper/0', 0, 6483054134592)
+
+
+CPU 1 total difference: 4.512742284
+Difference greater than 0.1: 0.112496891
+['kworker/1:0', 20, 6481324274333]
+('swapper/1', 0, 6481436771224)
+
+
+Difference greater than 0.1: 0.20398678
+['kworker/1:0', 20, 6481442250820]
+('swapper/1', 0, 6481646237600)
+
+
+Difference greater than 0.1: 0.163964509
+['sshd', 1600, 6482920918358]
+('swapper/1', 0, 6483084882867)
+
+
+CPU 2 total difference: 4.503794716
+Difference greater than 0.1: 0.164717622
+['kworker/2:0', 1365, 6482920092337]
+('swapper/2', 0, 6483084809959)
+
+
+CPU 3 total difference: 4.489486299
+Difference greater than 0.1: 0.109835254
+['kworker/3:2', 1480, 6481330784554]
+('swapper/3', 0, 6481440619808)
+
+
+Difference greater than 0.1: 0.103862729
+['kworker/3:2', 1480, 6482021359456]
+('swapper/3', 0, 6482125222185)
+
+
+Difference greater than 0.1: 0.119468885
+['snapd', 784, 6482209400956]
+('swapper/3', 0, 6482328869841)
+
+
+Difference greater than 0.1: 0.158604189
+['kworker/3:2', 1480, 6482926257880]
+('swapper/3', 0, 6483084862069)
+
+
+CPU 4 total difference: 4.503791028
+Difference greater than 0.1: 0.355452762
+['kworker/4:1', 118, 6481333620897]
+('swapper/4', 0, 6481689073659)
+
+
+Difference greater than 0.1: 0.107435749
+['kworker/4:1', 118, 6482025042967]
+('swapper/4', 0, 6482132478716)
+
+
+Difference greater than 0.1: 0.138387492
+['systemd-udevd', 475, 6482209396272]
+('swapper/4', 0, 6482347783764)
+
+
+CPU 5 total difference: 4.490435461
+Difference greater than 0.1: 0.249195725
+['multipathd', 668, 6481346770650]
+('swapper/5', 0, 6481595966375)
+
+
+Difference greater than 0.1: 0.287570172
+['kworker/5:3', 659, 6481845150141]
+('swapper/5', 0, 6482132720313)
+
+
+Difference greater than 0.1: 0.213517833
+['kworker/5:3', 659, 6482133417002]
+('swapper/5', 0, 6482346934835)
+
+
+CPU 6 total difference: 4.503812766
+Difference greater than 0.1: 0.121852361
+['rcu_sched', 11, 6481474130920]
+('swapper/6', 0, 6481595983281)
+
+
+Difference greater than 0.1: 0.236926232
+['kworker/6:2', 760, 6481697368596]
+('swapper/6', 0, 6481934294828)
+
+
+Difference greater than 0.1: 0.166181425
+['kworker/6:2', 760, 6482277113737]
+('swapper/6', 0, 6482443295162)
+
+
+Difference greater than 0.1: 0.100289388
+['kworker/6:2', 760, 6482704861371]
+('swapper/6', 0, 6482805150759)
+
+
+CPU 7 total difference: 4.510631988
+Difference greater than 0.1: 0.3148957
+['kworker/7:1', 122, 6481379258962]
+('swapper/7', 0, 6481694154662)
+
+
+Difference greater than 0.1: 0.162624867
+['kworker/7:1', 122, 6482922237203]
+('swapper/7', 0, 6483084862070)
+
+
+Max difference: 0.355452762
+
+Process finished with exit code 0

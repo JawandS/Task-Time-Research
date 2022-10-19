@@ -187,4 +187,4 @@ if __name__ == "__main__":
     # calculate the percent time each process takes on each CPU
     process_time_by_CPU(log_num=num)
     # check for difference greater than 0.1
-    check_diffs(log_num="7", min_diff=0.1)
+    check_diffs(log_num=num, min_diff=0.1)

@@ -19,7 +19,7 @@ def split_by_CPU(file_name):
 
 def trace_logs(log_num):
     # variables
-    log = "log_" + log_num + ".txt"
+    log = "Logs/log_" + log_num + ".txt"
     # read the file
     with open(log, "r") as f:
         data = {}  # store the data
@@ -79,7 +79,7 @@ def trace_logs(log_num):
     print("Total cpu time: " + str(sum(cpu_total.values()) / 1e+9))
 
     # save the data to a file
-    with open("processed_" + log_num + ".txt", "w") as f:
+    with open("Data/processed_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             # average time spent on CPU
             f.write("CPU " + str(cpu_num) + "\n")
@@ -101,7 +101,7 @@ def trace_logs(log_num):
 
 # a function that calculates the percent time each process takes on each CPU
 def process_time_by_CPU(log_num):
-    data = split_by_CPU("log_" + log_num + ".txt")
+    data = split_by_CPU("Logs/log_" + log_num + ".txt")
     # calculate the time for each process on each CPU
     process_time = {}
     # total time for each CPU
@@ -137,7 +137,7 @@ def process_time_by_CPU(log_num):
         for pname in process_time[cpu_num]:
             process_percent_time[cpu_num][pname] = process_time[cpu_num][pname] / cpu_total[cpu_num]
 
-    with open("by_CPU_" + log_num + ".txt", "w") as f:
+    with open("Data/by_CPU_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             f.write(f"CPU {cpu_num} total time: {cpu_total[cpu_num] / 1e+9}\n")
             for pname in process_percent_time[cpu_num]:
@@ -145,10 +145,10 @@ def process_time_by_CPU(log_num):
             f.write("\n")
 
 def check_diffs(log_num, min_diff):
-    file_name = "log_" + log_num + ".txt"
+    file_name = "Logs/log_" + log_num + ".txt"
     data = split_by_CPU(file_name)
     max_difference = 0
-    with open("time_diffs_" + log_num + ".txt", "w") as f:
+    with open("Data/time_diffs_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             f.write(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) / 1e+9}\n")
             prev_ts = 0

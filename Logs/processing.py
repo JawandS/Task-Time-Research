@@ -47,7 +47,6 @@ def trace_logs(log_num):
         # iterate through the data by cpu
         for cpu_num in data:
             prev_ts = 0  # previous timestamp
-            prev_data = []
             for vals in data[cpu_num]:
                 # get the values
                 pname, pid, ts = vals[0], vals[1], vals[2]
@@ -145,6 +144,37 @@ def process_time_by_CPU(log_num):
                 f.write(f"{pname}: {round(process_percent_time[cpu_num][pname] * 100, 3)}%\n")
             f.write("\n")
 
+def check_diffs(log_num, min_diff):
+    file_name = "log_" + log_num + ".txt"
+    data = split_by_CPU(file_name)
+    max_difference = 0
+    with open("time_diffs_" + log_num + ".txt", "w") as f:
+        for cpu_num in range(len(data)):
+            f.write(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) / 1e+9}\n")
+            prev_ts = 0
+            prev_data = []
+            for counter, vals in enumerate(data[cpu_num]):
+                # get the values
+                pname, pid, ts = vals[0], vals[1], vals[2]
+                if not prev_ts:
+                    prev_ts = ts
+                    prev_data = [pname, pid, ts]
+                    continue
+                # calculate the difference
+                diff = (int(ts) - int(prev_ts)) / 1e+9
+                # check if the difference (in seconds) is greater than 0.1
+                if diff > min_diff:
+                    f.write("Difference greater than 0.1: " + str(diff) + "\n")
+                    f.write(str(prev_data) + "\n")
+                    f.write(str(vals) + "\n")
+                    f.write("---\n")
+                # update the max difference
+                if diff > max_difference:
+                    max_difference = diff
+                # update the prev timestamp
+                prev_ts = ts
+                prev_data = [pname, pid, ts]
+        f.write("Max difference: " + str(max_difference) + "\n")
 
 if __name__ == "__main__":
     import sys
@@ -156,3 +186,5 @@ if __name__ == "__main__":
     trace_logs(log_num=num)
     # calculate the percent time each process takes on each CPU
     process_time_by_CPU(log_num=num)
+    # check for difference greater than 0.1
+    check_diffs(log_num="7", min_diff=0.1)

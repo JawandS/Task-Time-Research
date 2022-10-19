@@ -1,0 +1,110 @@
+CPU 0 total time: 4.372914901
+swapper/0: 60.009%
+bpftrace: 24.604%
+kworker/0:3: 0.042%
+ksoftirqd/0: 0.001%
+multipathd: 0.002%
+python3: 15.257%
+xfsaild/nvme0n1: 0.003%
+migration/0: 0.0%
+sshd: 0.005%
+kworker/u16:3: 0.071%
+rcu_sched: 0.002%
+kworker/0:1H: 0.002%
+
+CPU 1 total time: 4.235785908
+kworker/u16:3: 0.006%
+swapper/1: 76.267%
+python3: 15.725%
+bpftrace: 7.992%
+kworker/1:2: 0.006%
+ksoftirqd/1: 0.001%
+rcu_sched: 0.003%
+xfsaild/nvme0n1: 0.0%
+migration/1: 0.0%
+kthreadd: 0.0%
+kworker/u16:0: 0.0%
+kworker/1:1H: 0.0%
+
+CPU 2 total time: 4.000207582
+multipathd: 0.002%
+swapper/2: 66.619%
+python3: 28.216%
+kworker/2:1: 0.006%
+xfsaild/nvme0n1: 0.0%
+kworker/u16:3: 0.012%
+sshd: 0.009%
+ksoftirqd/2: 0.0%
+bpftrace: 5.132%
+migration/2: 0.0%
+rcu_sched: 0.002%
+kworker/2:1H: 0.0%
+
+CPU 3 total time: 4.453527442
+ksoftirqd/3: 0.001%
+python3: 32.75%
+kworker/3:0: 0.017%
+migration/3: 0.0%
+swapper/3: 61.485%
+bpftrace: 5.73%
+kworker/u16:3: 0.005%
+rcu_sched: 0.003%
+sshd: 0.007%
+xfsaild/nvme0n1: 0.001%
+
+CPU 4 total time: 4.573489922
+rcu_sched: 0.01%
+swapper/4: 78.552%
+ksoftirqd/4: 0.0%
+kworker/4:1: 0.005%
+python3: 13.595%
+bpftrace: 7.826%
+kworker/4:1H: 0.0%
+sshd: 0.008%
+xfsaild/nvme0n1: 0.0%
+migration/4: 0.0%
+kworker/u16:3: 0.002%
+thermald: 0.001%
+
+CPU 5 total time: 4.385297769
+sshd: 0.019%
+swapper/5: 70.256%
+kworker/5:3: 0.006%
+python3: 15.537%
+gmain: 0.001%
+bpftrace: 14.174%
+kworker/u16:3: 0.002%
+rcu_sched: 0.002%
+migration/5: 0.0%
+xfsaild/nvme0n1: 0.002%
+kworker/u16:1: 0.0%
+
+CPU 6 total time: 4.431730924
+multipathd: 0.0%
+swapper/6: 80.844%
+python3: 9.537%
+kworker/6:1: 0.006%
+rcu_sched: 0.01%
+kworker/6:1H: 0.002%
+xfsaild/nvme0n1: 0.003%
+bpftrace: 9.563%
+kworker/u16:3: 0.032%
+migration/6: 0.0%
+ksoftirqd/6: 0.0%
+sshd: 0.001%
+bash: 0.001%
+
+CPU 7 total time: 4.553390653
+kworker/7:2: 0.062%
+swapper/7: 79.597%
+xfsaild/nvme0n1: 0.004%
+python3: 12.654%
+bpftrace: 7.593%
+kworker/7:1H: 0.002%
+sshd: 0.021%
+kworker/u16:3: 0.065%
+rcu_sched: 0.002%
+ksoftirqd/7: 0.0%
+migration/7: 0.0%
+kthreadd: 0.0%
+

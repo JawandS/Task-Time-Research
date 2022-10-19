@@ -151,7 +151,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         num = sys.argv[1]
     else:
-        num = "6"
+        num = "7"
     # trace the logs for analysis
     trace_logs(log_num=num)
     # calculate the percent time each process takes on each CPU

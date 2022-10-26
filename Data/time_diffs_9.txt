@@ -1,0 +1,137 @@
+CPU 0 total difference: 6.222393416
+Difference greater than 0.1: 0.156050868
+['kworker/0:2', 274, 48379370093990]
+('swapper/0', 0, 48379526144858)
+---
+CPU 1 total difference: 5.868071197
+Difference greater than 0.1: 0.563996606
+['ksoftirqd/1', 19, 48378297028495]
+('python3', 8764, 48378861025101)
+---
+Difference greater than 0.1: 0.120005751
+['ksoftirqd/1', 19, 48378861030880]
+('python3', 8764, 48378981036631)
+---
+Difference greater than 0.1: 0.107339331
+['ksoftirqd/1', 19, 48379109030333]
+('python3', 8764, 48379216369664)
+---
+Difference greater than 0.1: 0.128997738
+['migration/1', 18, 48379397112548]
+('swapper/1', 0, 48379526110286)
+---
+Difference greater than 0.1: 0.199446178
+['swapper/1', 0, 48383741572083]
+('python3', 8765, 48383941018261)
+---
+Difference greater than 0.1: 0.171660004
+['bash', 6834, 48383993428823]
+('swapper/1', 0, 48384165088827)
+---
+CPU 2 total difference: 5.892092416
+Difference greater than 0.1: 0.672009823
+['ksoftirqd/2', 25, 48378309028467]
+('python3', 8765, 48378981038290)
+---
+Difference greater than 0.1: 0.191795039
+['swapper/2', 0, 48379370178720]
+('python3', 8763, 48379561973759)
+---
+Difference greater than 0.1: 0.144631187
+['ksoftirqd/2', 25, 48383813053717]
+('swapper/2', 0, 48383957684904)
+---
+Difference greater than 0.1: 0.178600192
+['kworker/2:1', 119, 48383990508663]
+('swapper/2', 0, 48384169108855)
+---
+CPU 3 total difference: 6.219384036
+Difference greater than 0.1: 0.128950042
+['swapper/3', 0, 48379397169038]
+('python3', 8764, 48379526119080)
+---
+Difference greater than 0.1: 0.183834998
+['swapper/3', 0, 48383757183276]
+('python3', 8763, 48383941018274)
+---
+Difference greater than 0.1: 0.183054419
+['kworker/3:1', 5772, 48383986054265]
+('swapper/3', 0, 48384169108684)
+---
+Difference greater than 0.1: 0.207305009
+['migration/3', 30, 48384169112410]
+('swapper/3', 0, 48384376417419)
+---
+CPU 4 total difference: 6.219398627
+Difference greater than 0.1: 0.183937108
+['ksoftirqd/4', 37, 48378157091516]
+('python3', 8763, 48378341028624)
+---
+Difference greater than 0.1: 0.575988707
+['ksoftirqd/4', 37, 48378341033960]
+('python3', 8763, 48378917022667)
+---
+Difference greater than 0.1: 0.103985474
+['ksoftirqd/4', 37, 48379145044131]
+('python3', 8763, 48379249029605)
+---
+Difference greater than 0.1: 0.203085881
+['swapper/4', 0, 48379322977966]
+('python3', 8765, 48379526063847)
+---
+Difference greater than 0.1: 0.115999072
+['rcu_sched', 11, 48384057012114]
+('swapper/4', 0, 48384173011186)
+---
+CPU 5 total difference: 5.916093197
+Difference greater than 0.1: 0.119875647
+['python3', 8763, 48379719217449]
+('python3', 8764, 48379839093096)
+---
+Difference greater than 0.1: 0.199644083
+['kworker/5:3', 6626, 48383741582770]
+('swapper/5', 0, 48383941226853)
+---
+Difference greater than 0.1: 0.187127347
+['kworker/5:3', 6626, 48383985984764]
+('swapper/5', 0, 48384173112111)
+---
+CPU 6 total difference: 6.116072767
+Difference greater than 0.1: 0.121464315
+['kworker/6:1', 73, 48378245034641]
+('swapper/6', 0, 48378366498956)
+---
+Difference greater than 0.1: 0.364896643
+['sshd', 6819, 48378419896805]
+('swapper/6', 0, 48378784793448)
+---
+Difference greater than 0.1: 0.196240898
+['multipathd', 672, 48378784804835]
+('swapper/6', 0, 48378981045733)
+---
+Difference greater than 0.1: 0.235133349
+['kworker/6:1', 73, 48378981054815]
+('swapper/6', 0, 48379216188164)
+---
+Difference greater than 0.1: 0.124115354
+['multipathd', 672, 48383784906167]
+('python3', 8764, 48383909021521)
+---
+CPU 7 total difference: 5.192082865
+Difference greater than 0.1: 0.191968284
+['kworker/7:0', 6358, 48378981053232]
+('swapper/7', 0, 48379173021516)
+---
+Difference greater than 0.1: 0.103674658
+['kworker/7:0', 6358, 48383741354682]
+('swapper/7', 0, 48383845029340)
+---
+Difference greater than 0.1: 0.112640413
+['kworker/7:0', 6358, 48383845041706]
+('swapper/7', 0, 48383957682119)
+---
+Difference greater than 0.1: 0.171954344
+['ksoftirqd/7', 55, 48384001165660]
+('swapper/7', 0, 48384173120004)
+---
+Max difference: 0.672009823

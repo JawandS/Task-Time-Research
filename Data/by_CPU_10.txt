@@ -1,0 +1,116 @@
+CPU 0 total time: 6.668777993
+xfsaild/nvme0n1: 0.001%
+swapper/0: 42.425%
+bpftrace: 23.083%
+multipathd: 0.002%
+kworker/0:2: 0.01%
+migration/0: 0.0%
+python3: 34.44%
+rcu_sched: 0.003%
+kworker/u16:0: 0.006%
+sshd: 0.03%
+ksoftirqd/0: 0.0%
+kworker/0:1H: 0.0%
+
+CPU 1 total time: 6.516905329
+ksoftirqd/1: 0.002%
+python3: 54.633%
+kworker/1:1: 0.011%
+migration/1: 0.0%
+kworker/1:1H: 0.001%
+swapper/1: 26.723%
+sshd: 0.018%
+rcu_sched: 0.005%
+bpftrace: 18.602%
+kworker/u16:0: 0.003%
+thermald: 0.001%
+kworker/u16:1: 0.0%
+xfsaild/nvme0n1: 0.0%
+
+CPU 2 total time: 5.97488282
+ksoftirqd/2: 0.004%
+python3: 60.754%
+kworker/2:1: 0.013%
+migration/2: 0.001%
+swapper/2: 32.234%
+rcu_sched: 0.004%
+bpftrace: 6.951%
+sshd: 0.03%
+kworker/u16:0: 0.008%
+multipathd: 0.0%
+xfsaild/nvme0n1: 0.001%
+kworker/2:1H: 0.0%
+
+CPU 3 total time: 6.560093774
+ksoftirqd/3: 0.003%
+python3: 56.065%
+kworker/3:1: 0.026%
+kworker/3:1H: 0.001%
+migration/3: 0.0%
+swapper/3: 38.641%
+bpftrace: 5.196%
+kworker/u16:0: 0.035%
+rcu_sched: 0.004%
+sshd: 0.026%
+xfsaild/nvme0n1: 0.002%
+bash: 0.0%
+
+CPU 4 total time: 5.926848277
+xfsaild/nvme0n1: 0.004%
+swapper/4: 46.799%
+ksoftirqd/4: 0.002%
+kworker/u16:0: 0.017%
+kworker/4:0: 0.013%
+migration/4: 0.0%
+python3: 44.456%
+bpftrace: 8.676%
+rcu_sched: 0.005%
+sshd: 0.022%
+irqbalance: 0.006%
+kworker/4:1H: 0.0%
+
+CPU 5 total time: 5.771720351
+sshd: 0.019%
+swapper/5: 50.063%
+kworker/u16:1: 0.002%
+kworker/5:1H: 0.0%
+kworker/5:3: 0.014%
+migration/5: 0.0%
+python3: 39.74%
+xfsaild/nvme0n1: 0.0%
+bpftrace: 10.157%
+rcu_sched: 0.004%
+kworker/u16:0: 0.002%
+ksoftirqd/5: 0.0%
+
+CPU 6 total time: 6.578214902
+rcu_sched: 0.026%
+swapper/6: 50.066%
+sshd: 0.04%
+multipathd: 0.001%
+kworker/6:1: 0.011%
+gmain: 0.001%
+migration/6: 0.0%
+python3: 43.791%
+bpftrace: 6.053%
+kworker/u16:0: 0.01%
+ksoftirqd/6: 0.001%
+xfsaild/nvme0n1: 0.0%
+kworker/u16:1: 0.0%
+kworker/6:1H: 0.0%
+
+CPU 7 total time: 6.679372616
+swapper/7: 58.392%
+bpftrace: 5.691%
+migration/7: 0.0%
+kworker/7:0: 0.041%
+ksoftirqd/7: 0.0%
+python3: 35.815%
+kworker/u16:0: 0.019%
+kworker/7:1H: 0.001%
+wpa_supplicant: 0.0%
+rcu_sched: 0.005%
+sshd: 0.032%
+xfsaild/nvme0n1: 0.003%
+bash: 0.001%
+

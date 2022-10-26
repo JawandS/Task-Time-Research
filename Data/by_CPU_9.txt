@@ -1,0 +1,111 @@
+CPU 0 total time: 6.222393416
+swapper/0: 44.894%
+bpftrace: 15.979%
+kworker/0:2: 0.014%
+ksoftirqd/0: 0.015%
+migration/0: 0.0%
+rcu_sched: 0.022%
+multipathd: 0.002%
+python3: 39.039%
+xfsaild/nvme0n1: 0.002%
+sshd: 0.029%
+kworker/u16:0: 0.003%
+
+CPU 1 total time: 5.868071197
+ksoftirqd/1: 0.001%
+python3: 64.063%
+kworker/1:1: 0.015%
+kworker/1:1H: 0.0%
+swapper/1: 30.629%
+migration/1: 0.001%
+bpftrace: 5.24%
+rcu_sched: 0.004%
+kworker/u16:0: 0.005%
+sshd: 0.038%
+xfsaild/nvme0n1: 0.001%
+thermald: 0.001%
+bash: 0.001%
+
+CPU 2 total time: 5.892092416
+kworker/2:1: 0.014%
+python3: 59.85%
+ksoftirqd/2: 0.001%
+swapper/2: 30.902%
+bpftrace: 9.187%
+rcu_sched: 0.004%
+xfsaild/nvme0n1: 0.0%
+kworker/u16:0: 0.004%
+sshd: 0.036%
+migration/2: 0.0%
+multipathd: 0.0%
+
+CPU 3 total time: 6.219384036
+xfsaild/nvme0n1: 0.001%
+rcu_sched: 0.008%
+swapper/3: 37.184%
+bpftrace: 18.68%
+kworker/3:1: 0.027%
+python3: 44.081%
+kworker/u16:0: 0.005%
+ksoftirqd/3: 0.0%
+kworker/3:1H: 0.0%
+sshd: 0.014%
+migration/3: 0.0%
+
+CPU 4 total time: 6.219398627
+ksoftirqd/4: 0.002%
+python3: 59.278%
+kworker/4:0: 0.012%
+swapper/4: 34.015%
+bpftrace: 6.659%
+rcu_sched: 0.005%
+sshd: 0.025%
+migration/4: 0.0%
+xfsaild/nvme0n1: 0.002%
+kworker/u16:0: 0.002%
+
+CPU 5 total time: 5.916093197
+rcu_sched: 0.005%
+swapper/5: 50.304%
+xfsaild/nvme0n1: 0.004%
+kworker/u16:1: 0.002%
+kworker/5:3: 0.012%
+thermald: 0.001%
+python3: 40.65%
+bpftrace: 8.985%
+ksoftirqd/5: 0.0%
+kworker/u16:0: 0.004%
+kworker/5:1H: 0.0%
+migration/5: 0.0%
+sshd: 0.024%
+irqbalance: 0.006%
+
+CPU 6 total time: 6.116072767
+kworker/6:1: 0.011%
+swapper/6: 49.606%
+sshd: 0.04%
+multipathd: 0.001%
+python3: 41.423%
+bpftrace: 8.91%
+ksoftirqd/6: 0.0%
+xfsaild/nvme0n1: 0.001%
+rcu_sched: 0.005%
+migration/6: 0.0%
+kworker/u16:0: 0.003%
+wpa_supplicant: 0.0%
+
+CPU 7 total time: 5.192082865
+kworker/7:0: 0.017%
+swapper/7: 44.889%
+python3: 44.143%
+bpftrace: 10.908%
+ksoftirqd/7: 0.001%
+kworker/7:1H: 0.001%
+xfsaild/nvme0n1: 0.001%
+kworker/u16:0: 0.003%
+rcu_sched: 0.005%
+gmain: 0.001%
+sshd: 0.031%
+migration/7: 0.0%
+bash: 0.001%
+

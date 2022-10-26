@@ -1,0 +1,117 @@
+CPU 0 total difference: 1.984095212
+Difference greater than 0.1: 0.707990667
+['kworker/0:2', 274, 50524165018912]
+('python3', 14883, 50524873009579)
+---
+Difference greater than 0.1: 0.688042791
+['multipathd', 672, 50525003193859]
+('python3', 14883, 50525691236650)
+---
+Difference greater than 0.1: 0.312037914
+['kworker/0:2', 274, 50525691247790]
+('swapper/0', 0, 50526003285704)
+---
+Difference greater than 0.1: 0.127997349
+['kworker/0:2', 274, 50526021104907]
+('swapper/0', 0, 50526149102256)
+---
+CPU 1 total difference: 1.991807192
+Difference greater than 0.1: 1.52453889
+['migration/1', 18, 50524165015773]
+('swapper/1', 0, 50525689554663)
+---
+Difference greater than 0.1: 0.235718487
+['sshd', 6819, 50525689588303]
+('swapper/1', 0, 50525925306790)
+---
+Difference greater than 0.1: 0.23149196
+['kworker/1:1H', 157, 50525925310894]
+('swapper/1', 0, 50526156802854)
+---
+CPU 2 total difference: 2.115790102
+CPU 3 total difference: 1.756211774
+Difference greater than 0.1: 0.667992204
+['migration/3', 30, 50524169097022]
+('swapper/3', 0, 50524837089226)
+---
+Difference greater than 0.1: 0.127971234
+['kworker/3:1', 5772, 50524837132430]
+('swapper/3', 0, 50524965103664)
+---
+Difference greater than 0.1: 0.896003282
+['kworker/3:1', 5772, 50524965113663]
+('swapper/3', 0, 50525861116945)
+---
+CPU 4 total difference: 1.884098522
+Difference greater than 0.1: 0.324099348
+['migration/4', 36, 50524173016863]
+('swapper/4', 0, 50524497116211)
+---
+Difference greater than 0.1: 0.107998539
+['rcu_sched', 11, 50524513015106]
+('swapper/4', 0, 50524621013645)
+---
+Difference greater than 0.1: 0.127998728
+['rcu_sched', 11, 50524645013951]
+('swapper/4', 0, 50524773012679)
+---
+Difference greater than 0.1: 0.852101941
+['rcu_sched', 11, 50524841013134]
+('swapper/4', 0, 50525693115075)
+---
+Difference greater than 0.1: 0.18004517
+['rcu_sched', 11, 50525725112063]
+('swapper/4', 0, 50525905157233)
+---
+CPU 5 total difference: 1.752297821
+Difference greater than 0.1: 0.343995129
+['migration/5', 42, 50524173015120]
+('python3', 14705, 50524517010249)
+---
+Difference greater than 0.1: 1.376293123
+['kworker/5:3', 6626, 50524549012596]
+('python3', 14705, 50525925305719)
+---
+CPU 6 total difference: 1.983803361
+Difference greater than 0.1: 0.440088688
+['kworker/6:1', 73, 50524177017460]
+('swapper/6', 0, 50524617106148)
+---
+Difference greater than 0.1: 0.386081751
+['kworker/6:1H', 276, 50524617110108]
+('swapper/6', 0, 50525003191859)
+---
+Difference greater than 0.1: 0.686343882
+['multipathd', 672, 50525003201718]
+('swapper/6', 0, 50525689545600)
+---
+Difference greater than 0.1: 0.313597744
+['kworker/6:1H', 276, 50525689703634]
+('swapper/6', 0, 50526003301378)
+---
+Difference greater than 0.1: 0.153508012
+['multipathd', 672, 50526003308372]
+('swapper/6', 0, 50526156816384)
+---
+CPU 7 total difference: 2.016014574
+Difference greater than 0.1: 0.791998992
+['migration/7', 54, 50524173104646]
+('swapper/7', 0, 50524965103638)
+---
+Difference greater than 0.1: 0.479987624
+['kworker/7:0', 6358, 50524965113684]
+('swapper/7', 0, 50525445101308)
+---
+Difference greater than 0.1: 0.24620631
+['kworker/7:0', 6358, 50525445106593]
+('swapper/7', 0, 50525691312903)
+---
+Difference greater than 0.1: 0.145659436
+['kworker/7:1H', 272, 50525758075179]
+('swapper/7', 0, 50525903734615)
+---
+Difference greater than 0.1: 0.211986896
+['kworker/7:0', 6358, 50525905126309]
+('swapper/7', 0, 50526117113205)
+---
+Max difference: 1.52453889

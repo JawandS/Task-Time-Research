@@ -1,0 +1,52 @@
+CPU 0 total time: 1.984095212
+migration/0: 0.0%
+kworker/0:2: 0.002%
+python3: 76.921%
+multipathd: 0.002%
+swapper/0: 23.075%
+
+CPU 1 total time: 1.991807192
+migration/1: 0.0%
+swapper/1: 99.997%
+sshd: 0.002%
+kworker/1:1H: 0.0%
+
+CPU 2 total time: 2.115790102
+swapper/2: 24.298%
+bpftrace: 75.696%
+kworker/2:1: 0.006%
+ksoftirqd/2: 0.0%
+migration/2: 0.0%
+
+CPU 3 total time: 1.756211774
+migration/3: 0.0%
+swapper/3: 99.983%
+kworker/3:1: 0.017%
+
+CPU 4 total time: 1.884098522
+swapper/4: 99.994%
+rcu_sched: 0.006%
+migration/4: 0.0%
+
+CPU 5 total time: 1.752297821
+migration/5: 0.0%
+python3: 99.999%
+kworker/5:3: 0.0%
+kworker/5:1H: 0.0%
+
+CPU 6 total time: 1.983803361
+migration/6: 0.0%
+swapper/6: 99.998%
+kworker/6:1: 0.0%
+kworker/6:1H: 0.0%
+multipathd: 0.001%
+kworker/u16:0: 0.0%
+
+CPU 7 total time: 2.016014574
+kworker/7:0: 0.002%
+swapper/7: 99.99%
+migration/7: 0.0%
+bash: 0.002%
+kworker/7:1H: 0.0%
+thermald: 0.007%
+

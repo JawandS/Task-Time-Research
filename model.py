@@ -76,10 +76,7 @@ layers.append(tf.keras.layers.Dense(1))
 # add layers to the model
 model = tf.keras.models.Sequential(layers)
 # compile the model
-if OUT_FLAG:
-    model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9))
-else:
-    model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9), verbose=0)
+model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9))
 # optimizer=opt.Adam(learning_rate=1e-7)
 # optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9)
 

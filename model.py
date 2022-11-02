@@ -7,6 +7,12 @@ import numpy as np
 import tensorflow as tf
 import tensorflow.keras.optimizers as opt # optimizer
 import time
+import sys
+args = sys.argv
+if len(args) > 1:
+    OUT_FLAG = False
+else:
+    OUT_FLAG = True
 
 # https://aditya-bhattacharya.net/2020/07/11/time-series-tips-and-tricks/2/
 # uses the MIT license https://github.com/adib0073/TimeSeries-Using-TensorFlow/blob/main/LICENSE
@@ -69,12 +75,18 @@ model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9))
 timestamps.append(time.time())  # 4: stop creating and compiling model, start training
 
 # train the model
-model.fit(train_dataset, epochs=EPOCHS, validation_data=test_dataset, verbose=1)
+if OUT_FLAG:
+    model.fit(train_dataset, epochs=EPOCHS, verbose=1)
+else:
+    model.fit(train_dataset, epochs=EPOCHS, validation_data=test_dataset, verbose=0)
 
 timestamps.append(time.time())  # 5: stop training, end program
 
 # indicate model end
-print("model ended, time taken: " + str(timestamps[-1] - timestamps[0]) + " seconds")
+if OUT_FLAG:
+    print("model ended, time taken: " + str(timestamps[-1] - timestamps[0]) + " seconds")
+else:
+    print(str(timestamps[-1] - timestamps[0])) # print time taken
 
 # end the program for now
 exit()

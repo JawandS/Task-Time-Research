@@ -2,17 +2,25 @@ import time
 
 timestamps = [time.time()]  # 0: start imports and overall file
 
-import pandas as pd
-import numpy as np
-import tensorflow as tf
-import tensorflow.keras.optimizers as opt # optimizer
-import time
 import sys
 args = sys.argv
 if len(args) > 1:
     OUT_FLAG = False
 else:
     OUT_FLAG = True
+
+if not OUT_FLAG:
+    import logging
+    import os
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # FATAL
+    logging.getLogger('tensorflow').setLevel(logging.FATAL)
+
+
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+import tensorflow.keras.optimizers as opt # optimizer
+import time
 
 # https://aditya-bhattacharya.net/2020/07/11/time-series-tips-and-tricks/2/
 # uses the MIT license https://github.com/adib0073/TimeSeries-Using-TensorFlow/blob/main/LICENSE
@@ -68,7 +76,10 @@ layers.append(tf.keras.layers.Dense(1))
 # add layers to the model
 model = tf.keras.models.Sequential(layers)
 # compile the model
-model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9))
+if OUT_FLAG:
+    model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9))
+else:
+    model.compile(loss="mse", optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9), verbose=0)
 # optimizer=opt.Adam(learning_rate=1e-7)
 # optimizer=opt.SGD(learning_rate=1e-7, momentum=0.9)
 

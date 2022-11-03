@@ -96,6 +96,20 @@ if OUT_FLAG:
 else:
     print(str(timestamps[-1] - timestamps[0])) # print time taken
 
+# kill the tracing
+import os, signal
+
+name = "bpftrace"
+for line in os.popen("ps ax | grep " + name + " | grep -v grep"):
+    fields = line.split()
+    # extracting Process ID from the output
+    pid = fields[0]
+    # terminating process
+    if OUT_FLAG:
+        print("killing " + name + " with pid " + pid)
+    # kill process
+    os.kill(int(pid), signal.SIGINT)  # SIGINT is the signal for "Interrupt"
+
 # end the program for now
 exit()
 

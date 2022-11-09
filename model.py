@@ -133,7 +133,7 @@ for idx, name in enumerate(names):
             os.kill(int(pid), signal.SIGTERM) # SIGTERM is the signal for "Terminate"
 
 # process the data
-from Archive.data_process import model_data_process
+from Archive.Old_Programs.data_process import model_data_process
 model_data_process(timestamps, params, model)
 # write PIDs to a file
 with open("Data/pids.txt", "w") as f:

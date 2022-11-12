@@ -156,6 +156,51 @@ def check_diffs(data, log_num, min_diff):
         f.write("Max difference: " + str(max_difference) + "\n")
 
 
+def process_time_by_pid(data, log_num):
+    # calculate the time for each process on each CPU
+    process_time = {}
+    # total time for each CPU
+    cpu_total = {i: 0 for i in range(len(data))}
+    # go through each CPU's log
+    for cpu_num in range(len(data)):
+        # calculate the total time for the CPU
+        cpu_total[cpu_num] = data[cpu_num][-1][2] - data[cpu_num][0][2]
+        # previous timestamp
+        prev_ts = 0
+        # go through the CPU's log
+        for idx, vals in enumerate(data[cpu_num]):
+            # get data
+            pname, pid, ts = vals[0], vals[1], vals[2]
+            if idx == 0:
+                prev_ts = ts
+                continue
+            # calculate the time
+            time_diff = ts - prev_ts
+            # add the time to the dictionary
+            if cpu_num not in process_time:
+                process_time[cpu_num] = {}
+            # key value
+            key_val = (pid, pname)
+            if key_val not in process_time[cpu_num]:
+                process_time[cpu_num][key_val] = 0
+            process_time[cpu_num][key_val] += time_diff
+            # update the previous timestamp
+            prev_ts = ts
+    # calculate the percent time for each process on each CPU
+    process_percent_time = {}
+    for cpu_num in range(len(data)):
+        if cpu_num not in process_percent_time:
+            process_percent_time[cpu_num] = {}
+        for key_val in process_time[cpu_num]:
+            process_percent_time[cpu_num][key_val] = process_time[cpu_num][key_val] / cpu_total[cpu_num]
+
+    with open("Data/by_PID_" + log_num + ".txt", "w") as f:
+        for cpu_num in range(len(data)):
+            f.write(f"CPU {cpu_num} total time: {cpu_total[cpu_num] / 1e+9}\n")
+            for key_val in process_percent_time[cpu_num]:
+                f.write(f"{key_val}: {round(process_percent_time[cpu_num][key_val] * 100, 3)}%\n")
+            f.write("\n")
+
 if __name__ == "__main__":
     import sys
 
@@ -170,3 +215,5 @@ if __name__ == "__main__":
     process_time_by_CPU(split_log, num)
     # check for difference greater than 0.1
     check_diffs(split_log, num, 0.1)
+    # calculate percentage time on each CPU by pid
+    process_time_by_pid(split_log, num)

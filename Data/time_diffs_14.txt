@@ -1,0 +1,369 @@
+CPU 0 total difference: 4.9771731
+Difference greater than 0.1: 0.175994619
+['migration/0', 12, 721828177815396]
+('python3', 692253, 721828353810015)
+---
+Difference greater than 0.1: 0.504784573
+['bpftrace', 692254, 721828361025363]
+('python3', 692253, 721828865809936)
+---
+Difference greater than 0.1: 0.100827572
+['bpftrace', 692254, 721828872983703]
+('python3', 692253, 721828973811275)
+---
+Difference greater than 0.1: 0.659994105
+['kworker/0:0', 686748, 721828973815833]
+('python3', 692253, 721829633809938)
+---
+Difference greater than 0.1: 0.248827847
+['bpftrace', 692254, 721829640982075]
+('python3', 692253, 721829889809922)
+---
+Difference greater than 0.1: 0.547592631
+['kworker/0:0', 686748, 721829965814201]
+('python3', 692253, 721830513406832)
+---
+Difference greater than 0.1: 0.476392905
+['multipathd', 674, 721830513417582]
+('python3', 692253, 721830989810487)
+---
+Difference greater than 0.1: 0.413736681
+['systemd', 1, 721831041124634]
+('python3', 692253, 721831454861315)
+---
+Difference greater than 0.1: 0.106039903
+['kworker/0:0', 686748, 721831454871088]
+('swapper/0', 0, 721831560910991)
+---
+Difference greater than 0.1: 0.118443596
+['sshd', 692023, 721831736035341]
+('swapper/0', 0, 721831854478937)
+---
+Difference greater than 0.1: 0.239312046
+['sshd', 692023, 721831854503173]
+('swapper/0', 0, 721832093815219)
+---
+Difference greater than 0.1: 0.892093653
+['migration/0', 12, 721832177816514]
+('swapper/0', 0, 721833069910167)
+---
+CPU 1 total difference: 4.227884973
+Difference greater than 0.1: 0.10396586
+['gmain', 774, 721828001844433]
+('python3', 692250, 721828105810293)
+---
+Difference greater than 0.1: 0.337548901
+['bpftrace', 692254, 721828280261359]
+('python3', 692250, 721828617810260)
+---
+Difference greater than 0.1: 0.181488009
+['bpftrace', 692254, 721828792323064]
+('python3', 692250, 721828973811073)
+---
+Difference greater than 0.1: 0.155994443
+['kworker/1:0', 691951, 721828973815413]
+('python3', 692250, 721829129809856)
+---
+Difference greater than 0.1: 0.629828643
+['bpftrace', 692254, 721829304179626]
+('python3', 692250, 721829934008269)
+---
+Difference greater than 0.1: 0.123996261
+['kworker/1:0', 691951, 721830029813594]
+('python3', 692250, 721830153809855)
+---
+Difference greater than 0.1: 0.437719048
+['bpftrace', 692254, 721830520091699]
+('python3', 692250, 721830957810747)
+---
+Difference greater than 0.1: 0.779833609
+['kworker/1:0', 691951, 721830957813868]
+('python3', 692250, 721831737647477)
+---
+Difference greater than 0.1: 0.148258602
+['kworker/1:0', 691951, 721831737656971]
+('swapper/1', 0, 721831885915573)
+---
+Difference greater than 0.1: 0.172938397
+['gmain', 774, 721832004953762]
+('swapper/1', 0, 721832177892159)
+---
+CPU 2 total difference: 5.11995039
+Difference greater than 0.1: 0.231791331
+['kworker/2:1H', 279, 721827950019937]
+('python3', 692247, 721828181811268)
+---
+Difference greater than 0.1: 0.151997661
+['migration/2', 24, 721828181814489]
+('python3', 692247, 721828333812150)
+---
+Difference greater than 0.1: 0.248000749
+['rcu_sched', 11, 721828357812813]
+('python3', 692247, 721828605813562)
+---
+Difference greater than 0.1: 0.333527248
+['bpftrace', 692254, 721828608284155]
+('python3', 692247, 721828941811403)
+---
+Difference greater than 0.1: 0.435995025
+['kworker/2:1', 692132, 721828941815141]
+('python3', 692247, 721829377810166)
+---
+Difference greater than 0.1: 0.548987837
+['bpftrace', 692254, 721829385020177]
+('python3', 692247, 721829934008014)
+---
+Difference greater than 0.1: 0.695997177
+['kworker/2:1', 692132, 721829965812864]
+('python3', 692247, 721830661810041)
+---
+Difference greater than 0.1: 0.288791777
+['bpftrace', 692254, 721830669018517]
+('python3', 692247, 721830957810294)
+---
+Difference greater than 0.1: 0.462296511
+['kworker/2:1', 692132, 721830957812633]
+('python3', 692247, 721831420109144)
+---
+Difference greater than 0.1: 0.31419795
+['swapper/2', 0, 721831541892734]
+('python3', 692246, 721831856090684)
+---
+Difference greater than 0.1: 0.228002363
+['kworker/2:1', 692132, 721831953897456]
+('swapper/2', 0, 721832181899819)
+---
+Difference greater than 0.1: 0.888037384
+['migration/2', 24, 721832181903213]
+('swapper/2', 0, 721833069940597)
+---
+CPU 3 total difference: 4.407270246
+Difference greater than 0.1: 0.149561136
+['bpftrace', 692254, 721828036250232]
+('python3', 692246, 721828185811368)
+---
+Difference greater than 0.1: 0.127954968
+['kworker/3:0', 690979, 721828241855374]
+('python3', 692246, 721828369810342)
+---
+Difference greater than 0.1: 0.337554486
+['bpftrace', 692254, 721828544255574]
+('python3', 692246, 721828881810060)
+---
+Difference greater than 0.1: 0.204003066
+['bpftrace', 692254, 721829061807798]
+('python3', 692246, 721829265810864)
+---
+Difference greater than 0.1: 0.127958526
+['kworker/3:0', 690979, 721829265851331]
+('python3', 692246, 721829393809857)
+---
+Difference greater than 0.1: 0.133567942
+['bpftrace', 692254, 721830080246008]
+('python3', 692246, 721830213813950)
+---
+Difference greater than 0.1: 0.387958316
+['kworker/3:0', 690979, 721830285851624]
+('python3', 692246, 721830673809940)
+---
+Difference greater than 0.1: 0.115995998
+['kworker/3:0', 690979, 721830925816120]
+('python3', 692246, 721831041812118)
+---
+Difference greater than 0.1: 0.13794185
+['bpftrace', 692254, 721831403872617]
+('python3', 692246, 721831541814467)
+---
+Difference greater than 0.1: 0.408088679
+['migration/3', 30, 721831541823323]
+('swapper/3', 0, 721831949912002)
+---
+Difference greater than 0.1: 0.235807338
+['kworker/3:1H', 283, 721831950113940]
+('swapper/3', 0, 721832185921278)
+---
+CPU 4 total difference: 4.667306609
+Difference greater than 0.1: 0.215998903
+['rcu_sched', 11, 721827969812275]
+('python3', 692251, 721828185811178)
+---
+Difference greater than 0.1: 0.411158414
+['migration/4', 36, 721828185814140]
+('python3', 692251, 721828596972554)
+---
+Difference greater than 0.1: 0.344831464
+['multipathd', 674, 721828596979671]
+('python3', 692251, 721828941811135)
+---
+Difference greater than 0.1: 0.319995461
+['kworker/4:1', 689580, 721828941814969]
+('python3', 692251, 721829261810430)
+---
+Difference greater than 0.1: 0.335172935
+['kworker/4:1', 689580, 721829261813407]
+('python3', 692251, 721829596986342)
+---
+Difference greater than 0.1: 0.33682054
+['multipathd', 674, 721829596989902]
+('python3', 692251, 721829933810442)
+---
+Difference greater than 0.1: 0.663181755
+['kworker/4:1', 689580, 721829933812747]
+('python3', 692251, 721830596994502)
+---
+Difference greater than 0.1: 0.4648144
+['multipathd', 674, 721830596997423]
+('python3', 692251, 721831061811823)
+---
+Difference greater than 0.1: 0.191998224
+['rcu_sched', 11, 721831085812175]
+('python3', 692251, 721831277810399)
+---
+Difference greater than 0.1: 0.123626553
+['kworker/4:1', 689580, 721831277813067]
+('python3', 692251, 721831401439620)
+---
+CPU 5 total difference: 5.205047982
+Difference greater than 0.1: 0.235992122
+['kworker/5:1', 691817, 721827949819764]
+('python3', 692248, 721828185811886)
+---
+Difference greater than 0.1: 0.103995424
+['migration/5', 42, 721828185814965]
+('python3', 692248, 721828289810389)
+---
+Difference greater than 0.1: 0.25272814
+['bpftrace', 692254, 721828344227772]
+('python3', 692248, 721828596955912)
+---
+Difference greater than 0.1: 0.204833883
+['multipathd', 674, 721828596976456]
+('python3', 692248, 721828801810339)
+---
+Difference greater than 0.1: 0.403994548
+['kworker/5:1', 691817, 721828909815750]
+('python3', 692248, 721829313810298)
+---
+Difference greater than 0.1: 0.228887043
+['bpftrace', 692254, 721829368090060]
+('python3', 692248, 721829596977103)
+---
+Difference greater than 0.1: 0.272822896
+['multipathd', 674, 721829596988399]
+('python3', 692248, 721829869811295)
+---
+Difference greater than 0.1: 0.563996861
+['kworker/5:1', 691817, 721829965813417]
+('python3', 692248, 721830529810278)
+---
+Difference greater than 0.1: 0.269713786
+['bpftrace', 692254, 721830656097040]
+('python3', 692248, 721830925810826)
+---
+Difference greater than 0.1: 0.351994262
+['kworker/5:1', 691817, 721830925816320]
+('python3', 692248, 721831277810582)
+---
+Difference greater than 0.1: 0.123796284
+['kworker/5:1', 691817, 721831277813069]
+('python3', 692248, 721831401609353)
+---
+Difference greater than 0.1: 0.352891066
+['multipathd', 674, 721831597020801]
+('swapper/5', 0, 721831949911867)
+---
+Difference greater than 0.1: 0.235993554
+['kworker/5:1', 691817, 721831949918623]
+('swapper/5', 0, 721832185912177)
+---
+Difference greater than 0.1: 0.411179574
+['migration/5', 42, 721832185918048]
+('swapper/5', 0, 721832597097622)
+---
+Difference greater than 0.1: 0.557739106
+['multipathd', 674, 721832597117445]
+('swapper/5', 0, 721833154856551)
+---
+CPU 6 total difference: 4.969263033
+Difference greater than 0.1: 0.723996839
+['migration/6', 48, 721828185815098]
+('python3', 692252, 721828909811937)
+---
+Difference greater than 0.1: 0.991994264
+['kworker/6:2', 692182, 721828909816222]
+('python3', 692252, 721829901810486)
+---
+Difference greater than 0.1: 1.512920832
+['kworker/6:2', 692182, 721829901812890]
+('python3', 692252, 721831414733722)
+---
+Difference greater than 0.1: 0.124084272
+['rcu_sched', 11, 721831889913623]
+('swapper/6', 0, 721832013997895)
+---
+Difference greater than 0.1: 0.411283867
+['migration/6', 48, 721832185918062]
+('swapper/6', 0, 721832597201929)
+---
+CPU 7 total difference: 5.113275294
+Difference greater than 0.1: 0.175996731
+['migration/7', 54, 721828185814825]
+('python3', 692249, 721828361811556)
+---
+Difference greater than 0.1: 0.163998077
+['rcu_sched', 11, 721828389812155]
+('python3', 692249, 721828553810232)
+---
+Difference greater than 0.1: 0.272002748
+['bpftrace', 692254, 721828605807890]
+('python3', 692249, 721828877810638)
+---
+Difference greater than 0.1: 0.183997285
+['kworker/7:2', 691592, 721828877814563]
+('python3', 692249, 721829061811848)
+---
+Difference greater than 0.1: 0.369547769
+['bpftrace', 692254, 721829120262415]
+('python3', 692249, 721829489810184)
+---
+Difference greater than 0.1: 0.209994232
+['bpftrace', 692254, 721829623815808]
+('python3', 692249, 721829833810040)
+---
+Difference greater than 0.1: 0.183996843
+['kworker/7:2', 691592, 721829905813081]
+('python3', 692249, 721830089809924)
+---
+Difference greater than 0.1: 0.433579797
+['bpftrace', 692254, 721830144231092]
+('python3', 692249, 721830577810889)
+---
+Difference greater than 0.1: 0.279995545
+['kworker/7:2', 691592, 721830577814484]
+('python3', 692249, 721830857810029)
+---
+Difference greater than 0.1: 0.14577509
+['bpftrace', 692254, 721831096034943]
+('python3', 692249, 721831241810033)
+---
+Difference greater than 0.1: 0.281059811
+['bpftrace', 692254, 721831357807210]
+('python3', 692249, 721831638867021)
+---
+Difference greater than 0.1: 0.371321427
+['kworker/7:2', 691592, 721831638876718]
+('swapper/7', 0, 721832010198145)
+---
+Difference greater than 0.1: 0.172003662
+['kworker/7:2', 691592, 721832013917599]
+('swapper/7', 0, 721832185921261)
+---
+Difference greater than 0.1: 0.371969128
+['migration/7', 54, 721832185929897]
+('swapper/7', 0, 721832557899025)
+---
+Difference greater than 0.1: 0.512018148
+['kworker/7:2', 691592, 721832557905007]
+('swapper/7', 0, 721833069923155)
+---
+Max difference: 1.512920832

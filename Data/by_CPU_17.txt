@@ -1,0 +1,109 @@
+CPU 0 total time: 3.506838218
+wpa_supplicant: 0.001%
+swapper/0: 68.791%
+bpftrace: 5.167%
+python3: 25.921%
+kworker/0:1: 0.005%
+rcu_sched: 0.006%
+multipathd: 0.0%
+ksoftirqd/0: 0.001%
+migration/0: 0.0%
+sshd: 0.003%
+kworker/u16:2: 0.004%
+ps: 0.101%
+
+CPU 1 total time: 4.313038588
+swapper/1: 56.044%
+bpftrace: 24.627%
+kworker/1:0: 0.008%
+ksoftirqd/1: 0.001%
+python3: 19.22%
+kworker/u16:2: 0.002%
+sshd: 0.036%
+kworker/1:1H: 0.001%
+migration/1: 0.0%
+xfsaild/nvme0n1: 0.001%
+rcu_sched: 0.001%
+sh: 0.06%
+
+CPU 2 total time: 4.282049695
+kworker/2:2: 0.003%
+swapper/2: 74.293%
+python3: 16.016%
+bpftrace: 9.673%
+rcu_sched: 0.003%
+kworker/u16:2: 0.004%
+ksoftirqd/2: 0.0%
+migration/2: 0.0%
+xfsaild/nvme0n1: 0.002%
+sshd: 0.002%
+thermald: 0.002%
+cron: 0.001%
+
+CPU 3 total time: 4.306012972
+rcu_sched: 0.009%
+swapper/3: 73.512%
+irqbalance: 0.006%
+kworker/3:3: 0.016%
+python3: 15.303%
+kworker/u16:2: 0.006%
+bpftrace: 11.122%
+kworker/3:1H: 0.0%
+migration/3: 0.0%
+sshd: 0.011%
+ksoftirqd/3: 0.0%
+grep: 0.015%
+
+CPU 4 total time: 4.310134891
+ksoftirqd/4: 0.001%
+python3: 40.415%
+multipathd: 0.001%
+swapper/4: 47.497%
+kworker/4:0: 0.003%
+bpftrace: 12.057%
+sshd: 0.024%
+migration/4: 0.0%
+xfsaild/nvme0n1: 0.001%
+rcu_sched: 0.0%
+kworker/u16:2: 0.001%
+
+CPU 5 total time: 4.302916281
+multipathd: 0.002%
+swapper/5: 77.249%
+gmain: 0.002%
+kworker/5:1: 0.005%
+systemd-journal: 0.001%
+python3: 20.858%
+bpftrace: 1.857%
+migration/5: 0.0%
+ksoftirqd/5: 0.0%
+rcu_sched: 0.004%
+kworker/5:1H: 0.0%
+sshd: 0.015%
+kworker/u16:2: 0.005%
+xfsaild/nvme0n1: 0.001%
+
+CPU 6 total time: 4.115922476
+kworker/u16:0: 0.002%
+swapper/6: 77.792%
+rcu_sched: 0.012%
+python3: 14.517%
+kworker/6:1H: 0.002%
+ksoftirqd/6: 0.001%
+kworker/6:2: 0.005%
+bpftrace: 7.642%
+kworker/u16:2: 0.002%
+migration/6: 0.0%
+sshd: 0.01%
+grep: 0.016%
+
+CPU 7 total time: 4.115735832
+sshd: 0.012%
+swapper/7: 76.291%
+python3: 14.26%
+kworker/7:1: 0.003%
+rcu_sched: 0.002%
+kworker/u16:2: 0.008%
+bpftrace: 9.424%
+migration/7: 0.0%
+

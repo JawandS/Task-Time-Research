@@ -201,6 +201,19 @@ def process_time_by_pid(data, log_num):
                 f.write(f"{key_val}: {round(process_percent_time[cpu_num][key_val] * 100, 3)}%\n")
             f.write("\n")
 
+
+def process_log(num):
+    split_log = split_by_CPU("Logs/log_" + num + ".txt")
+    # trace the logs for analysis
+    trace_logs(split_log, num)
+    # calculate the percent time each process takes on each CPU
+    process_time_by_CPU(split_log, num)
+    # check for difference greater than 0.1
+    check_diffs(split_log, num, 0.1)
+    # calculate percentage time on each CPU by pid
+    process_time_by_pid(split_log, num)
+
+
 if __name__ == "__main__":
     import sys
 

@@ -5,6 +5,11 @@ timestamps = [time.time()]  # 0: start imports and overall file
 import sys
 args = sys.argv
 if len(args) > 1:
+    log_num = args[1]
+else:
+    log_num = "15"
+
+if len(args) > 2:
     OUT_FLAG = False
 else:
     OUT_FLAG = True
@@ -110,34 +115,14 @@ for line in os.popen("ps ax | grep " + name + " | grep -v grep"):
     # kill process
     os.kill(int(pid), signal.SIGINT)  # SIGINT is the signal for "Interrupt"
 
-# end the program for now
-exit()
-
-# send signal to end context_switch_trace.py and fib.java
-import os, signal
-names = ["context_switch_trace.py", "fib"]
-pids = []
-for idx, name in enumerate(names):
-    for line in os.popen("ps ax | grep " + name + " | grep -v grep"):
-        fields = line.split()
-        # extracting Process ID from the output
-        pid = fields[0]
-        # terminating process
-        print("killing " + name + " with pid " + pid)
-        # capture data
-        pids.append((name, pid))
-        # kill process
-        if idx == 0:
-            os.kill(int(pid), signal.SIGINT) # SIGINT is the signal for "Interrupt"
-        else:
-            os.kill(int(pid), signal.SIGTERM) # SIGTERM is the signal for "Terminate"
-
-# process the data
-from Archive.Old_Programs.data_process import model_data_process
-model_data_process(timestamps, params, model)
-# write PIDs to a file
-with open("Data/pids.txt", "w") as f:
-    for name, pid in pids:
-        f.write(name + " " + pid + "\n")
-# print end of job
-print("finished processing model data")
+try:
+    # process the log
+    from processing import process_log
+    process_log(log_num)
+    # push to GitHub
+    import subprocess
+    subprocess.call(["sudo", "git", "add", "."])
+    subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
+    subprocess.call(["sudo", "git", "push"])
+except Exception as err:
+    print("processing failed: " + str(err))

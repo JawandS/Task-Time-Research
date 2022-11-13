@@ -41,7 +41,7 @@ data = np.array(df['Monthly Mean Total Sunspot Number'])
 SPLIT_RATIO = 0.8
 WINDOW_SIZE = 60
 SHUFFLE_BUFFER = 1000
-EPOCHS = 100
+EPOCHS = 30
 # Changeable hyperparameters (to be tuned) - optimizer, batch size, number of layers, multi-worker training
 BATCH_SIZE = 64
 LAYER_COUNT = 3

@@ -1,0 +1,105 @@
+CPU 0 total time: 4.279806922
+python3: 44.786%
+ksoftirqd/0: 0.003%
+swapper/0: 47.163%
+kworker/0:1: 0.004%
+sshd: 0.02%
+kworker/u16:0: 0.007%
+kworker/0:1H: 0.0%
+bpftrace: 8.016%
+migration/0: 0.0%
+rcu_sched: 0.001%
+multipathd: 0.0%
+
+CPU 1 total time: 4.044634016
+systemd-journal: 0.001%
+swapper/1: 75.429%
+python3: 20.986%
+bpftrace: 3.543%
+kworker/1:0: 0.003%
+rcu_sched: 0.005%
+kworker/1:1H: 0.0%
+sshd: 0.013%
+kworker/u16:0: 0.002%
+ksoftirqd/1: 0.001%
+multipathd: 0.0%
+migration/1: 0.0%
+grep: 0.015%
+
+CPU 2 total time: 4.287704631
+bpftrace: 29.47%
+swapper/2: 53.664%
+kworker/2:2: 0.004%
+python3: 16.761%
+ksoftirqd/2: 0.0%
+sshd: 0.017%
+thermald: 0.002%
+migration/2: 0.0%
+ps: 0.082%
+
+CPU 3 total time: 4.295870125
+ksoftirqd/3: 0.0%
+python3: 18.409%
+migration/3: 0.0%
+swapper/3: 71.964%
+kworker/3:3: 0.018%
+bpftrace: 9.569%
+kworker/3:1H: 0.001%
+kworker/u16:0: 0.014%
+kworker/u16:2: 0.001%
+rcu_sched: 0.002%
+sshd: 0.006%
+grep: 0.015%
+
+CPU 4 total time: 4.261173652
+gmain: 0.002%
+swapper/4: 80.191%
+kworker/u16:0: 0.021%
+multipathd: 0.001%
+python3: 15.229%
+kworker/4:0: 0.025%
+bpftrace: 4.467%
+kworker/4:1H: 0.0%
+ksoftirqd/4: 0.0%
+migration/4: 0.0%
+sshd: 0.003%
+sh: 0.061%
+
+CPU 5 total time: 3.899412965
+multipathd: 0.002%
+swapper/5: 76.986%
+python3: 17.149%
+kworker/5:1: 0.005%
+kworker/u16:0: 0.01%
+kworker/5:1H: 0.0%
+kthreadd: 0.001%
+kworker/u16:1: 0.0%
+bpftrace: 5.828%
+sshd: 0.017%
+migration/5: 0.0%
+ksoftirqd/5: 0.0%
+
+CPU 6 total time: 4.295761166
+rcu_sched: 0.012%
+swapper/6: 72.801%
+kworker/6:1H: 0.0%
+python3: 13.057%
+kworker/6:0: 0.004%
+migration/6: 0.0%
+ksoftirqd/6: 0.0%
+kworker/u16:0: 0.005%
+bpftrace: 14.105%
+sshd: 0.015%
+
+CPU 7 total time: 4.296753141
+swapper/7: 76.25%
+bpftrace: 6.042%
+migration/7: 0.0%
+kworker/7:1: 0.007%
+ksoftirqd/7: 0.0%
+sshd: 0.023%
+python3: 17.648%
+rcu_sched: 0.004%
+kworker/u16:0: 0.025%
+kworker/7:1H: 0.001%
+

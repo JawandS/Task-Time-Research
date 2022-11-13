@@ -1,0 +1,77 @@
+CPU 0 total difference: 4.279806922
+Difference greater than 0.1: 0.119807885
+['swapper/0', 0, 867404298015575]
+('python3', 708946, 867404417823460)
+---
+Difference greater than 0.1: 0.615989284
+['ksoftirqd/0', 10, 867404417832986]
+('python3', 708946, 867405033822270)
+---
+Difference greater than 0.1: 0.100543636
+['ksoftirqd/0', 10, 867405125845774]
+('python3', 708946, 867405226389410)
+---
+Difference greater than 0.1: 0.16234038
+['swapper/0', 0, 867405326271227]
+('python3', 708946, 867405488611607)
+---
+CPU 1 total difference: 4.044634016
+Difference greater than 0.1: 0.685354962
+['systemd-journal', 434, 867404541082137]
+('swapper/1', 0, 867405226437099)
+---
+Difference greater than 0.1: 0.162586379
+['kworker/1:0', 705406, 867405326150412]
+('swapper/1', 0, 867405488736791)
+---
+CPU 2 total difference: 4.287704631
+CPU 3 total difference: 4.295870125
+Difference greater than 0.1: 0.899973679
+['migration/3', 30, 867404297935095]
+('swapper/3', 0, 867405197908774)
+---
+Difference greater than 0.1: 0.162502222
+['python3', 708946, 867405326219333]
+('swapper/3', 0, 867405488721555)
+---
+CPU 4 total difference: 4.261173652
+Difference greater than 0.1: 0.100108658
+['gmain', 774, 867404324537293]
+('swapper/4', 0, 867404424645951)
+---
+Difference greater than 0.1: 0.194801026
+['kworker/u16:0', 708289, 867404491425460]
+('swapper/4', 0, 867404686226486)
+---
+Difference greater than 0.1: 0.539760714
+['multipathd', 674, 867404686238763]
+('swapper/4', 0, 867405225999477)
+---
+Difference greater than 0.1: 0.162080405
+['kworker/u16:0', 708289, 867405326526724]
+('swapper/4', 0, 867405488607129)
+---
+CPU 5 total difference: 3.899412965
+Difference greater than 0.1: 0.540251037
+['multipathd', 674, 867404686225631]
+('swapper/5', 0, 867405226476668)
+---
+Difference greater than 0.1: 0.159910327
+['kworker/5:1', 708112, 867405326000458]
+('swapper/5', 0, 867405485910785)
+---
+CPU 6 total difference: 4.295761166
+CPU 7 total difference: 4.296753141
+Difference greater than 0.1: 0.178714521
+['kworker/7:1', 702934, 867404310106590]
+('swapper/7', 0, 867404488821111)
+---
+Difference greater than 0.1: 0.734556613
+['sshd', 708372, 867404491547346]
+('swapper/7', 0, 867405226103959)
+---
+Difference greater than 0.1: 0.162101857
+['sshd', 708372, 867405326619724]
+('swapper/7', 0, 867405488721581)
+---
+Max difference: 0.899973679

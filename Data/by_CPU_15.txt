@@ -1,0 +1,113 @@
+CPU 0 total time: 4.205161837
+ksoftirqd/0: 0.001%
+python3: 42.566%
+kworker/0:1: 0.004%
+swapper/0: 49.683%
+migration/0: 0.0%
+sshd: 0.009%
+bpftrace: 7.734%
+kworker/u16:2: 0.001%
+multipathd: 0.0%
+wpa_supplicant: 0.0%
+xfsaild/nvme0n1: 0.0%
+rcu_sched: 0.001%
+
+CPU 1 total time: 4.256989545
+rcu_sched: 0.012%
+swapper/1: 67.445%
+ksoftirqd/1: 0.006%
+kworker/1:0: 0.003%
+python3: 15.507%
+bpftrace: 17.022%
+thermald: 0.002%
+kworker/1:1H: 0.0%
+multipathd: 0.0%
+kworker/u16:2: 0.003%
+migration/1: 0.0%
+xfsaild/nvme0n1: 0.0%
+
+CPU 2 total time: 4.193022828
+xfsaild/nvme0n1: 0.005%
+swapper/2: 75.726%
+systemd-udevd: 0.006%
+snapd: 0.002%
+python3: 12.101%
+rcu_sched: 0.003%
+ksoftirqd/2: 0.0%
+kworker/2:2: 0.004%
+bpftrace: 12.141%
+kworker/u16:2: 0.004%
+sshd: 0.008%
+migration/2: 0.0%
+
+CPU 3 total time: 4.305085712
+xfsaild/nvme0n1: 0.001%
+swapper/3: 69.642%
+gmain: 0.002%
+kworker/u16:2: 0.003%
+kworker/3:3: 0.018%
+python3: 25.645%
+bpftrace: 4.682%
+kworker/3:1H: 0.0%
+ksoftirqd/3: 0.0%
+sshd: 0.007%
+migration/3: 0.0%
+
+CPU 4 total time: 4.330686857
+swapper/4: 73.607%
+bpftrace: 7.15%
+migration/4: 0.0%
+kworker/4:0: 0.011%
+ksoftirqd/4: 0.001%
+multipathd: 0.001%
+systemd-journal: 0.001%
+python3: 19.149%
+sshd: 0.016%
+xfsaild/nvme0n1: 0.0%
+kworker/u16:2: 0.005%
+rcu_sched: 0.001%
+sh: 0.058%
+
+CPU 5 total time: 4.313057055
+bpftrace: 21.399%
+swapper/5: 63.88%
+multipathd: 0.002%
+kworker/5:1: 0.004%
+systemd-udevd: 0.001%
+python3: 14.663%
+kworker/u16:2: 0.004%
+kworker/5:1H: 0.0%
+rcu_sched: 0.004%
+xfsaild/nvme0n1: 0.0%
+ksoftirqd/5: 0.0%
+sshd: 0.027%
+migration/5: 0.0%
+grep: 0.015%
+
+CPU 6 total time: 3.762873744
+snapd: 0.005%
+swapper/6: 76.35%
+ksoftirqd/6: 0.001%
+python3: 16.059%
+bpftrace: 7.525%
+kworker/6:0: 0.006%
+kworker/6:1H: 0.0%
+kworker/u16:2: 0.006%
+rcu_sched: 0.003%
+sshd: 0.028%
+migration/6: 0.0%
+grep: 0.017%
+
+CPU 7 total time: 4.329144222
+rcu_sched: 0.005%
+swapper/7: 79.274%
+kworker/7:1: 0.004%
+sshd: 0.021%
+systemd-udevd: 0.016%
+python3: 16.197%
+bpftrace: 4.394%
+kworker/u16:2: 0.003%
+xfsaild/nvme0n1: 0.003%
+migration/7: 0.0%
+ps: 0.083%
+

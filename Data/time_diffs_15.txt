@@ -1,0 +1,73 @@
+CPU 0 total difference: 4.205161837
+Difference greater than 0.1: 0.441064667
+['ksoftirqd/0', 10, 867016673830199]
+('python3', 708476, 867017114894866)
+---
+Difference greater than 0.1: 0.21888438
+['kworker/0:1', 702857, 867017114938126]
+('python3', 708476, 867017333822506)
+---
+Difference greater than 0.1: 0.10009143
+['ksoftirqd/0', 10, 867017477824852]
+('python3', 708476, 867017577916282)
+---
+Difference greater than 0.1: 0.15554971
+['migration/0', 12, 867017621938403]
+('swapper/0', 0, 867017777488113)
+---
+CPU 1 total difference: 4.256989545
+CPU 2 total difference: 4.193022828
+CPU 3 total difference: 4.305085712
+Difference greater than 0.1: 0.350629249
+['kworker/u16:2', 708145, 867016751288346]
+('swapper/3', 0, 867017101917595)
+---
+Difference greater than 0.1: 0.380782503
+['kworker/3:3', 708050, 867017101963682]
+('swapper/3', 0, 867017482746185)
+---
+Difference greater than 0.1: 0.155372626
+['swapper/3', 0, 867017621996765]
+('python3', 708476, 867017777369391)
+---
+CPU 4 total difference: 4.330686857
+Difference greater than 0.1: 0.145956508
+['multipathd', 674, 867016644991558]
+('swapper/4', 0, 867016790948066)
+---
+Difference greater than 0.1: 0.692289735
+['systemd-journal', 434, 867016791003607]
+('swapper/4', 0, 867017483293342)
+---
+CPU 5 total difference: 4.313057055
+Difference greater than 0.1: 0.132491798
+['multipathd', 674, 867017645091944]
+('swapper/5', 0, 867017777583742)
+---
+CPU 6 total difference: 3.762873744
+Difference greater than 0.1: 0.352081342
+['snapd', 788, 867017130939469]
+('swapper/6', 0, 867017483020811)
+---
+Difference greater than 0.1: 0.126783177
+['kworker/6:1H', 280, 867017615123738]
+('swapper/6', 0, 867017741906915)
+---
+CPU 7 total difference: 4.329144222
+Difference greater than 0.1: 0.126635906
+['kworker/7:1', 702934, 867016621929089]
+('swapper/7', 0, 867016748564995)
+---
+Difference greater than 0.1: 0.364007573
+['sshd', 708372, 867016751320190]
+('swapper/7', 0, 867017115327763)
+---
+Difference greater than 0.1: 0.366721402
+['systemd-udevd', 708487, 867017116041777]
+('swapper/7', 0, 867017482763179)
+---
+Difference greater than 0.1: 0.162587117
+['sshd', 708372, 867017614931431]
+('swapper/7', 0, 867017777518548)
+---
+Max difference: 0.692289735

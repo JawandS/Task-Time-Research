@@ -1,0 +1,113 @@
+CPU 0 total time: 4.205161837
+(10, 'ksoftirqd/0'): 0.001%
+(708476, 'python3'): 42.566%
+(702857, 'kworker/0:1'): 0.004%
+(0, 'swapper/0'): 49.683%
+(12, 'migration/0'): 0.0%
+(708372, 'sshd'): 0.009%
+(708477, 'bpftrace'): 7.734%
+(708145, 'kworker/u16:2'): 0.001%
+(674, 'multipathd'): 0.0%
+(794, 'wpa_supplicant'): 0.0%
+(364, 'xfsaild/nvme0n1'): 0.0%
+(11, 'rcu_sched'): 0.001%
+
+CPU 1 total time: 4.256989545
+(11, 'rcu_sched'): 0.012%
+(0, 'swapper/1'): 67.445%
+(19, 'ksoftirqd/1'): 0.006%
+(705406, 'kworker/1:0'): 0.003%
+(708476, 'python3'): 15.507%
+(708477, 'bpftrace'): 17.022%
+(790, 'thermald'): 0.002%
+(142, 'kworker/1:1H'): 0.0%
+(674, 'multipathd'): 0.0%
+(708145, 'kworker/u16:2'): 0.003%
+(18, 'migration/1'): 0.0%
+(364, 'xfsaild/nvme0n1'): 0.0%
+
+CPU 2 total time: 4.193022828
+(364, 'xfsaild/nvme0n1'): 0.005%
+(0, 'swapper/2'): 75.726%
+(482, 'systemd-udevd'): 0.006%
+(788, 'snapd'): 0.002%
+(708476, 'python3'): 12.101%
+(11, 'rcu_sched'): 0.003%
+(25, 'ksoftirqd/2'): 0.0%
+(704006, 'kworker/2:2'): 0.004%
+(708477, 'bpftrace'): 12.141%
+(708145, 'kworker/u16:2'): 0.004%
+(708372, 'sshd'): 0.008%
+(24, 'migration/2'): 0.0%
+
+CPU 3 total time: 4.305085712
+(364, 'xfsaild/nvme0n1'): 0.001%
+(0, 'swapper/3'): 69.642%
+(774, 'gmain'): 0.002%
+(708145, 'kworker/u16:2'): 0.003%
+(708050, 'kworker/3:3'): 0.018%
+(708476, 'python3'): 25.645%
+(708477, 'bpftrace'): 4.682%
+(283, 'kworker/3:1H'): 0.0%
+(31, 'ksoftirqd/3'): 0.0%
+(708372, 'sshd'): 0.007%
+(30, 'migration/3'): 0.0%
+
+CPU 4 total time: 4.330686857
+(0, 'swapper/4'): 73.607%
+(708477, 'bpftrace'): 7.15%
+(36, 'migration/4'): 0.0%
+(707247, 'kworker/4:0'): 0.011%
+(37, 'ksoftirqd/4'): 0.001%
+(674, 'multipathd'): 0.001%
+(434, 'systemd-journal'): 0.001%
+(708476, 'python3'): 19.149%
+(708372, 'sshd'): 0.016%
+(364, 'xfsaild/nvme0n1'): 0.0%
+(708145, 'kworker/u16:2'): 0.005%
+(11, 'rcu_sched'): 0.001%
+(708845, 'sh'): 0.058%
+
+CPU 5 total time: 4.313057055
+(708477, 'bpftrace'): 21.399%
+(0, 'swapper/5'): 63.88%
+(674, 'multipathd'): 0.002%
+(708112, 'kworker/5:1'): 0.004%
+(482, 'systemd-udevd'): 0.001%
+(708476, 'python3'): 14.663%
+(708145, 'kworker/u16:2'): 0.004%
+(230, 'kworker/5:1H'): 0.0%
+(11, 'rcu_sched'): 0.004%
+(364, 'xfsaild/nvme0n1'): 0.0%
+(43, 'ksoftirqd/5'): 0.0%
+(708372, 'sshd'): 0.027%
+(42, 'migration/5'): 0.0%
+(708847, 'grep'): 0.015%
+
+CPU 6 total time: 3.762873744
+(788, 'snapd'): 0.005%
+(0, 'swapper/6'): 76.35%
+(49, 'ksoftirqd/6'): 0.001%
+(708476, 'python3'): 16.059%
+(708477, 'bpftrace'): 7.525%
+(708221, 'kworker/6:0'): 0.006%
+(280, 'kworker/6:1H'): 0.0%
+(708145, 'kworker/u16:2'): 0.006%
+(11, 'rcu_sched'): 0.003%
+(708372, 'sshd'): 0.028%
+(48, 'migration/6'): 0.0%
+(708848, 'grep'): 0.017%
+
+CPU 7 total time: 4.329144222
+(11, 'rcu_sched'): 0.005%
+(0, 'swapper/7'): 79.274%
+(702934, 'kworker/7:1'): 0.004%
+(708372, 'sshd'): 0.021%
+(708487, 'systemd-udevd'): 0.016%
+(708476, 'python3'): 16.197%
+(708477, 'bpftrace'): 4.394%
+(708145, 'kworker/u16:2'): 0.003%
+(364, 'xfsaild/nvme0n1'): 0.003%
+(54, 'migration/7'): 0.0%
+(708846, 'ps'): 0.083%
+

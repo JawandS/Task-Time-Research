@@ -124,5 +124,6 @@ try:
     subprocess.call(["sudo", "git", "add", "."])
     subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
     subprocess.call(["sudo", "git", "push"])
+    exit()
 except Exception as err:
     print("processing failed: " + str(err))

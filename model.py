@@ -1,13 +1,17 @@
-import time
-
-timestamps = [time.time()]  # 0: start imports and overall file
-
 import sys
 args = sys.argv
 if len(args) > 1:
     log_num = args[1]
 else:
     log_num = "15"
+
+# start tracing
+import subprocess
+subprocess.call("bpftrace -e 'tracepoint:sched:sched_switch { printf(\"%s %lu %d %lu\n\", comm, pid, cpu, nsecs); }' >> Logs/log_" + log_num + ".txt")
+
+import time
+
+timestamps = [time.time()]  # 0: start imports and overall file
 
 if len(args) > 2:
     OUT_FLAG = False
@@ -120,7 +124,6 @@ try:
     from processing import process_log
     process_log(log_num)
     # push to GitHub
-    import subprocess
     subprocess.call(["sudo", "git", "add", "."])
     subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
     subprocess.call(["sudo", "git", "push"])

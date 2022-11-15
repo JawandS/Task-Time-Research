@@ -1,17 +1,38 @@
-# TF-Analysis
+# Analyzing CPU Consumption
 ### TensorFlow Analysis using bpftrace 
 ##
 
-Run data collection:  
+## Execution  
+Execute run.sh for data collection on mdoel.py:  
 bpftrace -e 'tracepoint:sched:sched_switch { printf("%s %lu %d %lu\n", comm, pid, cpu, nsecs); }'
 
 - Using bpftrace to trace context switches
 - model.py is a TensorFlow deep learning job that automatically kills tracing
 - The timeline is analyzed with processing.py
 - fib.py is a fibonacci job (does not kill tracing)
+- Pass run number to run.sh for 
+
+## Index of Logs  
+Logs
+- 1: ~4 second run with ML 
+- 2: 1 second run
+- 3: 2 second run 
+- 4: 1 second run after restart 
+- 5: 1 second run
+- 6: ~4.5 second run with ML
+- 7: ~6 second with ML after restart (didn’t kill tracing for ~1.5 seconds)
+- 8: ~4.5 second run with ML
+- 9: ~6.5 second run with multiple ML
+- 10: ~6.5 second run with multiple ML
+- 11: ~2 second run with fib.py 
+- 12: ~1.5 second run with fib.py
+- 13: Running 7 fib jobs with manual kill 
+- 14: Running 8 fib jobs with manual kill
+### Automatically killing the tracing at the end of the ML job  
+- 15-17: standard ML runs (30 epochs) 
 
 -------------------------- 
-**Notes for project version in Archive**  
+## **Notes for project version in Archive**  
 General notes:
 - The first 2k elements of the raw timeline are saved
 - Processes like kworker/# are combined to kworker  

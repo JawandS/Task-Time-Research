@@ -115,15 +115,12 @@ for line in os.popen("ps ax | grep " + name + " | grep -v grep"):
     # kill process
     os.kill(int(pid), signal.SIGINT)  # SIGINT is the signal for "Interrupt"
 
-try:
-    # process the log
-    from processing import process_log
-    process_log(log_num)
-    # push to GitHub
-    import subprocess
-    subprocess.call(["sudo", "git", "add", "."])
-    subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
-    subprocess.call(["sudo", "git", "push"])
-    exit()
-except Exception as err:
-    print("processing failed: " + str(err))
+# process the log
+from processing import process_log
+process_log(log_num)
+# push to GitHub
+import subprocess
+subprocess.call(["sudo", "git", "add", "."])
+subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
+subprocess.call(["sudo", "git", "push"])
+

@@ -1,0 +1,213 @@
+CPU 0 total time: 24.68007342
+kworker/0:2: 0.013%
+python3: 90.194%
+migration/0: 0.0%
+gvfs-afc-volume: 0.0%
+kworker/0:1H: 0.0%
+thermald: 0.001%
+rcu_sched: 0.0%
+swapper/0: 8.589%
+bpftrace: 1.202%
+
+CPU 1 total time: 24.836087125
+kcompactd0: 0.0%
+kworker/1:2: 0.0%
+python3: 86.769%
+migration/1: 0.0%
+rcu_sched: 0.0%
+kworker/u40:9: 0.002%
+snapd: 0.0%
+swapper/1: 13.08%
+ksoftirqd/1: 0.0%
+bpftrace: 0.147%
+
+CPU 2 total time: 24.568029653
+kworker/2:2: 0.0%
+python3: 90.296%
+rcu_sched: 0.0%
+migration/2: 0.0%
+swapper/2: 9.703%
+thermald: 0.0%
+gvfs-afc-volume: 0.0%
+
+CPU 3 total time: 24.396048523
+rcu_sched: 0.0%
+python3: 90.851%
+kworker/3:1: 0.0%
+migration/3: 0.0%
+swapper/3: 9.149%
+
+CPU 4 total time: 24.409948331
+python3: 93.541%
+ksoftirqd/4: 0.0%
+kworker/4:2: 0.0%
+migration/4: 0.0%
+irq/180-iwlwifi: 0.0%
+kworker/4:1H: 0.0%
+rcu_sched: 0.0%
+swapper/4: 6.458%
+
+CPU 5 total time: 24.679981591
+kworker/5:1: 0.0%
+python3: 87.889%
+migration/5: 0.0%
+rcu_sched: 0.0%
+irq/188-iwlwifi: 0.001%
+kworker/5:1H: 0.0%
+NetworkManager: 0.001%
+kworker/5:2: 0.0%
+gdbus: 0.0%
+dbus-daemon: 0.001%
+systemd-resolve: 0.001%
+swapper/5: 12.107%
+
+CPU 6 total time: 24.419122664
+python3: 93.581%
+systemd-logind: 0.001%
+kworker/6:1: 0.0%
+migration/6: 0.0%
+kworker/6:1H: 0.0%
+rcu_sched: 0.0%
+bpftrace: 0.09%
+swapper/6: 6.327%
+
+CPU 7 total time: 24.188818056
+kworker/7:2: 0.0%
+python3: 89.214%
+migration/7: 0.0%
+kworker/7:1H: 0.0%
+rcu_sched: 0.0%
+swapper/7: 10.785%
+
+CPU 8 total time: 24.423133112
+python3: 99.999%
+kworker/8:1: 0.0%
+migration/8: 0.0%
+NetworkManager: 0.001%
+rcu_sched: 0.0%
+swapper/8: 0.0%
+
+CPU 9 total time: 24.311992216
+rcu_sched: 0.002%
+python3: 86.514%
+kworker/9:2: 0.0%
+migration/9: 0.0%
+kworker/9:1H: 0.0%
+irq/176-iwlwifi: 0.001%
+NetworkManager: 0.001%
+kworker/u41:0: 0.0%
+gdbus: 0.0%
+dbus-daemon: 0.001%
+systemd-resolve: 0.001%
+swapper/9: 13.48%
+ksoftirqd/9: 0.0%
+
+CPU 10 total time: 24.612004184
+python3: 99.86%
+kworker/10:3: 0.001%
+migration/10: 0.0%
+NetworkManager: 0.001%
+rcu_sched: 0.0%
+irqbalance: 0.003%
+bash: 0.0%
+swapper/10: 0.135%
+
+CPU 11 total time: 24.712016256
+python3: 89.964%
+kworker/11:1: 0.0%
+migration/11: 0.0%
+rcu_sched: 0.0%
+swapper/11: 10.035%
+
+CPU 12 total time: 24.630330914
+python3: 87.082%
+bpftrace: 4.973%
+kworker/u40:11: 0.01%
+kworker/12:1: 0.001%
+rcu_sched: 0.0%
+ksoftirqd/12: 0.0%
+migration/12: 0.0%
+jbd2/nvme0n1p2-: 0.0%
+kworker/12:1H: 0.0%
+rtkit-daemon: 0.0%
+sshd: 0.0%
+swapper/12: 7.933%
+
+CPU 13 total time: 24.864091721
+bpftrace: 4.916%
+python3: 79.878%
+kworker/13:1: 0.001%
+migration/13: 0.0%
+kworker/13:1H: 0.0%
+gmain: 0.0%
+avahi-daemon: 0.002%
+rcu_sched: 0.0%
+kworker/u40:11: 0.001%
+swapper/13: 15.201%
+sshd: 0.0%
+bash: 0.0%
+
+CPU 14 total time: 24.805128733
+dbus-daemon: 0.003%
+python3: 25.175%
+ksoftirqd/14: 0.0%
+kworker/14:2: 0.0%
+migration/14: 0.0%
+bpftrace: 56.061%
+swapper/14: 18.759%
+wpa_supplicant: 0.0%
+jbd2/nvme0n1p2-: 0.0%
+kworker/14:1H: 0.0%
+rcu_sched: 0.001%
+
+CPU 15 total time: 24.460040051
+migration/15: 0.0%
+python3: 86.9%
+kworker/15:1: 0.0%
+kworker/u40:11: 0.001%
+irq/182-iwlwifi: 0.0%
+kworker/15:1H: 0.0%
+swapper/15: 13.073%
+bpftrace: 0.025%
+sshd: 0.001%
+
+CPU 16 total time: 24.240008916
+kworker/16:1: 0.0%
+python3: 91.496%
+migration/16: 0.0%
+thermald: 0.0%
+rcu_sched: 0.0%
+kworker/u40:11: 0.0%
+NetworkManager: 0.004%
+gdbus: 0.0%
+avahi-daemon: 0.0%
+systemd-resolve: 0.0%
+swapper/16: 8.422%
+jbd2/nvme0n1p2-: 0.0%
+kworker/16:1H: 0.0%
+bpftrace: 0.075%
+
+CPU 17 total time: 24.000856886
+migration/17: 0.0%
+python3: 90.807%
+kworker/17:1: 0.0%
+rcu_sched: 0.0%
+swapper/17: 9.192%
+
+CPU 18 total time: 24.373534045
+rcu_sched: 0.001%
+python3: 90.612%
+kworker/18:2: 0.0%
+migration/18: 0.0%
+avahi-daemon: 0.001%
+bpftrace: 0.454%
+swapper/18: 8.932%
+
+CPU 19 total time: 24.000271068
+migration/19: 0.0%
+python3: 90.898%
+kworker/19:1H: 0.0%
+kworker/19:1: 0.0%
+rcu_sched: 0.0%
+swapper/19: 9.101%
+

@@ -31,6 +31,7 @@ Logs
 ### Automatically killing the tracing at the end of the ML job  
 - 15-17: standard ML runs (30 epochs) 
 - 18: 20 CPU server, standard ML run 
+- 19: 20 CPU server, 21 fib jobs - interesting results 
 
 -------------------------- 
 ## **Notes for project version in Archive**  

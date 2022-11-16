@@ -1,0 +1,170 @@
+CPU 0 total time: 2.947318432
+(20294, 'kworker/u40:0'): 0.005%
+(0, 'swapper/0'): 91.014%
+(1512, 'kworker/0:3'): 0.014%
+(20438, 'python3'): 8.955%
+(202, 'kworker/0:1H'): 0.0%
+(12, 'ksoftirqd/0'): 0.005%
+(13, 'rcu_sched'): 0.006%
+(14, 'migration/0'): 0.001%
+
+CPU 1 total time: 2.10811558
+(20074, 'kworker/1:2'): 0.006%
+(0, 'swapper/1'): 96.369%
+(20438, 'python3'): 3.616%
+(20, 'migration/1'): 0.008%
+(21, 'ksoftirqd/1'): 0.002%
+
+CPU 2 total time: 2.951177099
+(20412, 'sshd'): 0.021%
+(0, 'swapper/2'): 87.096%
+(141, 'kcompactd0'): 0.001%
+(20438, 'python3'): 12.875%
+(19270, 'kworker/2:2'): 0.004%
+(2194, 'gmain'): 0.001%
+(26, 'migration/2'): 0.001%
+(27, 'ksoftirqd/2'): 0.0%
+(13, 'rcu_sched'): 0.002%
+
+CPU 3 total time: 2.284450561
+(20438, 'python3'): 2.478%
+(0, 'swapper/3'): 97.507%
+(246, 'kworker/3:2'): 0.005%
+(32, 'migration/3'): 0.007%
+(20412, 'sshd'): 0.004%
+
+CPU 4 total time: 2.544927164
+(1188, 'rtkit-daemon'): 0.001%
+(0, 'swapper/4'): 85.865%
+(20438, 'python3'): 14.091%
+(20323, 'kworker/4:0'): 0.006%
+(38, 'migration/4'): 0.002%
+(20412, 'sshd'): 0.016%
+(141, 'kcompactd0'): 0.0%
+(21219, 'grep'): 0.018%
+
+CPU 5 total time: 2.945844964
+(13, 'rcu_sched'): 0.017%
+(0, 'swapper/5'): 98.022%
+(20311, 'kworker/5:0'): 0.003%
+(20438, 'python3'): 1.952%
+(44, 'migration/5'): 0.006%
+
+CPU 6 total time: 2.912098664
+(20321, 'kworker/6:0'): 0.006%
+(0, 'swapper/6'): 89.14%
+(1259, 'gmain'): 0.005%
+(20438, 'python3'): 10.844%
+(1241, 'gvfs-afc-volume'): 0.001%
+(13, 'rcu_sched'): 0.002%
+(50, 'migration/6'): 0.001%
+(2194, 'GUsbEventThread'): 0.0%
+
+CPU 7 total time: 2.312704985
+(498, 'kworker/7:1H'): 0.0%
+(0, 'swapper/7'): 97.303%
+(20438, 'python3'): 2.492%
+(20170, 'kworker/7:1'): 0.004%
+(56, 'migration/7'): 0.005%
+(21218, 'ps'): 0.196%
+
+CPU 8 total time: 3.038892358
+(0, 'swapper/8'): 20.344%
+(20439, 'bpftrace'): 79.62%
+(20334, 'kworker/8:0'): 0.014%
+(63, 'ksoftirqd/8'): 0.003%
+(673, 'irq/187-iwlwifi'): 0.016%
+(344, 'kworker/8:1H'): 0.0%
+(20438, 'python3'): 0.002%
+(62, 'migration/8'): 0.0%
+
+CPU 9 total time: 2.344733569
+(20438, 'python3'): 1.674%
+(0, 'swapper/9'): 98.222%
+(552, 'kworker/9:1H'): 0.0%
+(252, 'kworker/9:1'): 0.003%
+(68, 'migration/9'): 0.003%
+(20439, 'bpftrace'): 0.099%
+
+CPU 10 total time: 3.03291275
+(20272, 'kworker/10:2'): 0.006%
+(75, 'ksoftirqd/10'): 0.005%
+(20438, 'python3'): 52.426%
+(660, 'irq/176-iwlwifi'): 0.022%
+(0, 'swapper/10'): 47.479%
+(421, 'kworker/10:1H'): 0.0%
+(74, 'migration/10'): 0.0%
+(20294, 'kworker/u40:0'): 0.002%
+(13, 'rcu_sched'): 0.001%
+(21217, 'sh'): 0.06%
+
+CPU 11 total time: 2.386733191
+(20438, 'python3'): 2.455%
+(0, 'swapper/11'): 97.501%
+(1875, 'kworker/11:0'): 0.004%
+(80, 'migration/11'): 0.006%
+(20412, 'sshd'): 0.018%
+(20294, 'kworker/u40:0'): 0.015%
+
+CPU 12 total time: 2.688471353
+(459, 'systemd-journal'): 0.001%
+(0, 'swapper/12'): 84.186%
+(20438, 'python3'): 15.782%
+(20251, 'kworker/12:2'): 0.006%
+(86, 'migration/12'): 0.001%
+(1505, 'kworker/dying'): 0.001%
+(20294, 'kworker/u40:0'): 0.001%
+(13, 'rcu_sched'): 0.0%
+(20412, 'sshd'): 0.021%
+
+CPU 13 total time: 2.902075247
+(361, 'kworker/13:1H'): 0.0%
+(0, 'swapper/13'): 98.036%
+(20438, 'python3'): 1.956%
+(242, 'kworker/13:1'): 0.003%
+(92, 'migration/13'): 0.004%
+
+CPU 14 total time: 2.544873589
+(1188, 'rtkit-daemon'): 0.0%
+(0, 'swapper/14'): 81.986%
+(20438, 'python3'): 17.986%
+(98, 'migration/14'): 0.002%
+(259, 'kworker/14:2'): 0.006%
+(20294, 'kworker/u40:0'): 0.0%
+(13, 'rcu_sched'): 0.001%
+(752, 'thermald'): 0.003%
+(21220, 'grep'): 0.016%
+
+CPU 15 total time: 2.284899674
+(20438, 'python3'): 3.125%
+(0, 'swapper/15'): 96.864%
+(260, 'kworker/15:2'): 0.004%
+(104, 'migration/15'): 0.007%
+(13, 'rcu_sched'): 0.0%
+
+CPU 16 total time: 3.004114134
+(20172, 'kworker/16:1'): 0.014%
+(0, 'swapper/16'): 94.145%
+(20438, 'python3'): 5.834%
+(110, 'migration/16'): 0.007%
+
+CPU 17 total time: 2.560423154
+(238, 'kworker/17:1'): 0.009%
+(0, 'swapper/17'): 94.766%
+(20438, 'python3'): 5.219%
+(116, 'migration/17'): 0.007%
+
+CPU 18 total time: 2.385717088
+(20438, 'python3'): 5.137%
+(0, 'swapper/18'): 94.843%
+(263, 'kworker/18:1'): 0.008%
+(122, 'migration/18'): 0.012%
+
+CPU 19 total time: 2.353006906
+(501, 'kworker/19:1H'): 0.001%
+(0, 'swapper/19'): 94.778%
+(20438, 'python3'): 5.2%
+(128, 'migration/19'): 0.015%
+(2243, 'kworker/19:0'): 0.007%
+(13, 'rcu_sched'): 0.0%
+

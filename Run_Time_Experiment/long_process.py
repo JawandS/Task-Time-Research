@@ -1,10 +1,10 @@
 # find the first and last timestamp for each CPU
 def trace_log():
-    data = {} # capture first/last timestamp for each CPU
+    data = {}  # capture first/last timestamp for each CPU
     with open("long_run.txt", "r") as f:
         print("opened data")
         for idx, line in enumerate(f):
-            if line == "\n" or idx == 0: # ignore new lines
+            if line == "\n" or idx == 0:  # ignore new lines
                 continue
             # get the values
             vals = line.split()
@@ -18,5 +18,6 @@ def trace_log():
     for cpu_num in data:
         print("CPU", cpu_num, ":", (data[cpu_num][1] - data[cpu_num][0]) / 1e+9, " seconds")
 
+
 if __name__ == "__main__":
-  trace_log()
+    trace_log()

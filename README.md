@@ -30,6 +30,7 @@ Logs
 - 14: Running 8 fib jobs with manual kill
 ### Automatically killing the tracing at the end of the ML job  
 - 15-17: standard ML runs (30 epochs) 
+- 18: 20 CPU server, standard ML run 
 
 -------------------------- 
 ## **Notes for project version in Archive**  

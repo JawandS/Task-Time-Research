@@ -116,11 +116,12 @@ for line in os.popen("ps ax | grep " + name + " | grep -v grep"):
     os.kill(int(pid), signal.SIGINT)  # SIGINT is the signal for "Interrupt"
 
 # process the log
-from processing import process_log
-process_log(log_num)
-# push to GitHub
-import subprocess
-subprocess.call(["sudo", "git", "add", "."])
-subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
-subprocess.call(["sudo", "git", "push"])
+if int(log_num) >= 0: # only if valid log number
+    from processing import process_log
+    process_log(log_num)
+    # push to GitHub
+    import subprocess
+    subprocess.call(["sudo", "git", "add", "."])
+    subprocess.call(["sudo", "git", "commit", "-m", "Add and process run number " + log_num])
+    subprocess.call(["sudo", "git", "push"])
 

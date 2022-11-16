@@ -9,6 +9,6 @@ def fib(n):
 # Driver Program
 if __name__ == "__main__":
     start_time = time.time()
-    n = 45
+    n = 40
     fib(n)
     print("Time taken: " + str(time.time() - start_time))

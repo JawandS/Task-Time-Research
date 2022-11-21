@@ -13,6 +13,6 @@ if __name__ == "__main__":
     n = 30
     fib(n)
     if len(args) > 1:
-        print(args[1], args[2], round(time.time() - start_time, 3))
+        print(args[1], round(time.time() - start_time, 3))
     else:
-        print(-1, -1, round(time.time() - start_time, 3))
+        print(-1, round(time.time() - start_time, 3))

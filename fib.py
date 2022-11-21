@@ -12,4 +12,7 @@ if __name__ == "__main__":
     args = sys.argv
     n = 25
     fib(n)
-    print(args[0], args[1], round(time.time() - start_time, 3))
+    if len(args) > 1:
+        print(args[1], args[2], round(time.time() - start_time, 3))
+    else:
+        print(-1, -1, round(time.time() - start_time, 3))

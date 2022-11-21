@@ -1,4 +1,4 @@
-import time
+import time, sys
 
 # fibonacci function using recursion
 def fib(n):
@@ -9,6 +9,7 @@ def fib(n):
 # Driver Program
 if __name__ == "__main__":
     start_time = time.time()
-    n = 40
+    args = sys.argv
+    n = 25
     fib(n)
-    print("Time taken: " + str(time.time() - start_time))
+    print(args[0], args[1], round(time.time() - start_time, 3))

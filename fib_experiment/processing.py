@@ -60,7 +60,7 @@ def trace_logs(data, log_num):
     print("Total cpu time: " + str(sum(cpu_total.values()) / 1e+9))
 
     # save the data to a file
-    with open("Data/processed_" + log_num + ".txt", "w") as f:
+    with open("results/processed_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             # average time spent on CPU
             f.write("CPU " + str(cpu_num) + "\n")
@@ -117,7 +117,7 @@ def process_time_by_CPU(data, log_num):
         for pname in process_time[cpu_num]:
             process_percent_time[cpu_num][pname] = process_time[cpu_num][pname] / cpu_total[cpu_num]
 
-    with open("Data/by_CPU_" + log_num + ".txt", "w") as f:
+    with open("results/by_CPU_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             f.write(f"CPU {cpu_num} total time: {cpu_total[cpu_num] / 1e+9}\n")
             for pname in process_percent_time[cpu_num]:
@@ -127,7 +127,7 @@ def process_time_by_CPU(data, log_num):
 
 def check_diffs(data, log_num, min_diff):
     max_difference = 0
-    with open("Data/time_diffs_" + log_num + ".txt", "w") as f:
+    with open("results/time_diffs_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             f.write(f"CPU {cpu_num} total difference: {(data[cpu_num][-1][2] - data[cpu_num][0][2]) / 1e+9}\n")
             prev_ts = 0
@@ -194,7 +194,7 @@ def process_time_by_pid(data, log_num):
         for key_val in process_time[cpu_num]:
             process_percent_time[cpu_num][key_val] = process_time[cpu_num][key_val] / cpu_total[cpu_num]
 
-    with open("Data/by_PID_" + log_num + ".txt", "w") as f:
+    with open("results/by_PID_" + log_num + ".txt", "w") as f:
         for cpu_num in range(len(data)):
             f.write(f"CPU {cpu_num} total time: {cpu_total[cpu_num] / 1e+9}\n")
             for key_val in process_percent_time[cpu_num]:

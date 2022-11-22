@@ -14,7 +14,7 @@ def main(store_full_log):
 
     print("imports: " + str(time.time() - start_time))
 
-    # load BPF program: traces all context switches and logs them
+    # load BPF program: traces all context switches and Logs them
     b = BPF(text="""
     TRACEPOINT_PROBE(sched, sched_switch) {
         // cat /sys/kernel/debug/tracing/events/sched/sched_switch/format
